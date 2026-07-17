@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,9 @@
 		rel="stylesheet">
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=open_in_new" />
+
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=open_in_new" />
 	<!-- CSS Styles -->
 	<link rel="stylesheet" href="./assets/css/style.css" />
 </head>
@@ -38,26 +42,125 @@
 			<div class="et-wrap">
 				<h2 class="header-02">SHOP SITE - 01</h2>
 				<div class="et-inner">
-					<a href="https://production-account.github.io/01/" target="_blank" class="et-anchor btn" aria-label="別タブでサイトページを表示します">
+					<a href="https://okami-821.github.io/02_work/" target="_blank" class="et-anchor btn"
+						aria-label="別タブでサイトページを表示します">
 						<picture class="picture">
 							<source srcset="assets/images/01.webp">
 							<img src="assets/images/01.jpg" width="480" height="250" alt="XX年制作">
-							<figcaption>サイトページへ<span class="material-symbols-outlined">open_in_new</span></figcaption>
+							<!-- <figcaption>サイトページへ<span class="material-symbols-outlined">open_in_new</span></figcaption> -->
 						</picture>
 					</a>
 					<div class="site-detail">
-						<dl>
-							<dt>制作の担当範囲と概要</dt>
-							<dd><span>担当範囲：</span>全ページコーディング（マークアップ、動きの実装など）、レイアウトの調整、レスポンシブデザインの設計、インタラクション設計</dd>
-							<dd><span>制作期間：</span>（お戻しを含めず）コーディングに約10日間</dd>
-							<dd><span>使用ツール・言語：</span>Photoshop, HTML5, CSS3, JavaScript(jQuery) </dd>
-						</dl>
-						<dl>
-							<dt>制作の目的とターゲット</dt>
-							<dd><span>サイトの目的：</span>ブランドの世界観の確立、認知拡大、ストーリーの共有</dd>
-							<dd><span>ターゲット層：</span>30代以降の女性、日常着にこだわりがある</dd>
-							<dd><span>デザインの意図：</span>忙しい時間を忘れて日常にリラックスやクリエイティブな発想を提案する</dd>
-						</dl>
+						<div class="tabs">
+
+							<div class="tabs__list" role="tab" aria-label="タブメニュー：">
+								<label id="tabs-all" class="tabs__item" for="tabs-all-input">
+									<input id="tabs-all-input" type="radio" name="tabs" checked>
+									制作の担当範囲
+								</label>
+								<label id="tabs-goal" class="tabs__item" for="tabs-goal-input">
+									<input id="tabs-goal-input" type="radio" name="tabs">
+									ディレクション
+								</label>
+								<label id="tabs-target" class="tabs__item" for="tabs-target-input">
+									<input id="tabs-target-input" type="radio" name="tabs">
+									デザイン
+								</label>
+								<label id="tabs-research" class="tabs__item" for="tabs-research-input">
+									<input id="tabs-research-input" type="radio" name="tabs">
+									コーディング
+								</label>
+							</div>
+
+							<div class="tabs__content" id="tabs-all__content" role="tabpanel" aria-labelledby="tabs-all">
+								<div class="tabs-inner">
+									<table class="responsive-table stack-table">
+										<thead>
+											<tr>
+												<th>項目</th>
+												<th>担当内容 / 使用ツール</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td data-label="担当範囲">担当範囲</td>
+												<td data-label="コーダー/フロントエンジニア（ディレクション兼務）">コーダー/フロントエンジニア（ディレクション兼務）</td>
+											</tr>
+											<tr>
+												<td data-label="デザイン">デザイン</td>
+												<td data-label="ワイヤーフレーム作成, 画像レタッチ, サイトの構成">ワイヤーフレーム作成, 画像レタッチ, サイトの構成</td>
+											</tr>
+											<tr>
+												<td data-label="コーディング">コーディング</td>
+												<td data-label="HTML5,CSS3,JavaScriptjQuary">HTML5, CSS3, JavaScript、jQuary</td>
+											</tr>
+											<tr>
+												<td data-label="制作期間">制作期間</td>
+												<td data-label="コーディング期間：約50時間">1ヶ月（企画・仕様設計2週間、制作約50時間）</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+							<div class="tabs__content" id="tabs-goal__content" role="tabpanel" aria-labelledby="tabs-goal">
+								<div class="tabs-inner">
+									<dl>
+										<dt>クライアントの目的 / 課題</dt>
+										<dd>
+											<span>目的：</span>新ブランド立ち上げに伴い、WEBサイトを使って認知度を上げたい<br>
+											<span>課題：</span>①競合ブランドとの差別化を明確にする ②信頼、安心感などのアピールする<br>
+										</dd>
+										<dt>目的・課題改善に意識した点</dt>
+										<dd>
+											信頼・安心感を向上させるために、品質に関するこだわりをページ内に盛り込むことを提案。『急な来客や近所への外出にも対応できる上品さを両立させたスタイル』をコンセプト・キーとして考え、普段使いに取り入れやすい「お手入れ方法」や「商品について」などのコンテンツを提案。
+										</dd>
+										<dt>その他</dt>
+										<dd>コーディングの知識を活かし、技術的なリスクや工数を先回りして予測。手戻りを防ぐことに貢献しました。</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="tabs__content" id="tabs-target__content" role="tabpanel" aria-labelledby="tabs-target">
+								<div class="tabs-inner">
+									<dl>
+										<dt>ワイヤーフレームの作成</dt>
+										<dd>商品に関する詳細ページのワイヤーフレームを担当<a
+												href="https://okami-821.github.io/02_work/bag_extrasmall/index.html">該当ページ<span
+													class="material-symbols-outlined">open_in_new</span></a></dd>
+										<dd>
+											<span>課題：</span>
+											商品数が多いため、どんな商品があったのか忘れてしまう<br>
+											<span>実績：</span>
+											アイテムの組み合わせを提案できるように関連商品の枠を設置するワイヤーフレームを作成
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="tabs__content" id="tabs-research__content" role="tabpanel" aria-labelledby="tabs-research">
+								<div class="tabs-inner">
+									<dl>
+										<dt>制作担当範囲</dt>
+										<dd>15〜20全ページの制作を担当</dd>
+										<dt>ユーザー操作に対するインタラクション設計</dt>
+										<dd>
+											<span>課題：</span>『急な来客や近所への外出にも対応できる上品さを両立させたスタイル』高級感と親しみやすさを表現<br>
+											<span>実績：</span>ブランドイメージを損なわないように、ゆったりした心地よいフェードイン・アニメーションを実装
+										</dd>
+										<dt>レスポンシブデザインの設計</dt>
+										<dd>
+											<span>課題：</span>スマートフォン閲覧疲れによる離脱を防ぐ<br>
+											<span>実績：</span>テキストが多い分画面が文字で埋め尽くされることを懸念。それに伴いスクロール疲れも想定されるため、アコーディオン機能を実装。ユーザーが求める情報にアクセスしやすい設計にしました。
+										</dd>
+										<dt>表示パフォーマンスについて</dt>
+										<dd>
+											<span>課題：</span>閲覧環境に負荷を与えないサイトにする<br>
+											<span>実績：</span>画像サイズの最適化、不要なプラグインの排除、jQueryライブラリを極力使わずJavaScriptで実装。また、
+											PageSpeed Insightsのスコア向上と表示速度の高速化
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -66,7 +169,8 @@
 			<div class="et-wrap">
 				<h2 class="header-02">FEATURE PAGE - 02</h2>
 				<div class="et-inner">
-					<a href="https://production-account.github.io/02/" target="_blank" class="et-anchor btn" aria-label="別タブでサイトページを表示します">
+					<a href="https://okami-821.github.io/portfolio04/" target="_blank" class="et-anchor btn"
+						aria-label="別タブでサイトページを表示します">
 						<picture class="picture">
 							<source srcset="assets/images/02.webp">
 							<img src="assets/images/02.jpg" width="480" height="250" alt="XX年制作">
@@ -94,7 +198,8 @@
 			<div class="et-wrap">
 				<h2 class="header-02">FEATURE PAGE - 03</h2>
 				<div class="et-inner">
-					<a href="https://production-account.github.io/03/" target="_blank" class="et-anchor btn" aria-label="別タブでサイトページを表示します">
+					<a href="https://okami-821.github.io/portfolio05/" target="_blank" class="et-anchor btn"
+						aria-label="別タブでサイトページを表示します">
 						<picture class="picture">
 							<source srcset="assets/images/03.webp">
 							<img src="assets/images/03.jpg" width="480" height="250" alt="XX年制作">
@@ -122,7 +227,8 @@
 			<div class="et-wrap">
 				<h2 class="header-02">ORIGINAL SITE - 04</h2>
 				<div class="et-inner">
-					<a href="https://production-account.github.io/04/" target="_blank" class="et-anchor btn" aria-label="別タブでサイトページを表示します">
+					<a href="https://okami-821.github.io/03_work/" target="_blank" class="et-anchor btn"
+						aria-label="別タブでサイトページを表示します">
 						<picture class="picture">
 							<source srcset="assets/images/04.webp">
 							<img src="assets/images/04.jpg" width="480" height="250" alt="XX年制作">
@@ -150,7 +256,8 @@
 			<div class="et-wrap">
 				<h2 class="header-02">FINANCIAL SITE - 05</h2>
 				<div class="et-inner">
-					<a href="https://www.fanbridge-cashless.com/" target="_blank" class="et-anchor btn" aria-label="別タブでサイトページを表示します">
+					<a href="https://www.fanbridge-cashless.com/" target="_blank" class="et-anchor btn"
+						aria-label="別タブでサイトページを表示します">
 						<picture class="picture">
 							<source srcset="assets/images/05.webp">
 							<img src="assets/images/05.jpg" width="480" height="250" alt="XX年制作">
@@ -178,7 +285,8 @@
 			<div class="et-wrap">
 				<h2 class="header-02">SCHOOL SITE - 06</h2>
 				<div class="et-inner">
-					<a href="https://www.sendai-eco.ac.jp/education/training.html" target="_blank" class="et-anchor btn" aria-label="別タブでサイトページを表示します">
+					<a href="https://www.sendai-eco.ac.jp/education/training.html" target="_blank" class="et-anchor btn"
+						aria-label="別タブでサイトページを表示します">
 						<picture class="picture">
 							<source srcset="assets/images/06.webp">
 							<img src="assets/images/06.jpg" width="480" height="250" alt="XX年制作">
@@ -280,6 +388,7 @@
 	</main>
 	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
 		crossorigin="anonymous"></script>
-		<script src="./assets/js/main.js"></script>
+	<script src="./assets/js/main.js"></script>
 </body>
+
 </html>
