@@ -183,7 +183,21 @@ img {
               padding: 0.8rem;
 
               span {
+                margin-right: 1rem;
+                font-size: 18px;
                 font-weight: 600;
+
+                &.goal {
+                  color: darkorange;
+                }
+
+                &.task {
+                  color: crimson;
+                }
+
+                &.results {
+                  color: 	#6BD19C;
+                }
               }
             }
           }
@@ -261,14 +275,25 @@ tabs
 ----------
 */
 
-.tabs {
+.tabs-01,
+.tabs-02,
+.tabs-03,
+.tabs-04,
+.tabs-05,
+.tabs-06,
+.tabs-07 {
   background-color: #FFF;
   border: 1px solid #333;
-  border-radius: 15px;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+  border-radius: 15px 15px 0 0;
 }
 
-.tabs .tabs__item {
+.tabs-01 .tabs__item,
+.tabs-02 .tabs__item,
+.tabs-03 .tabs__item,
+.tabs-04 .tabs__item,
+.tabs-05 .tabs__item,
+.tabs-06 .tabs__item,
+.tabs-07 .tabs__item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -278,14 +303,26 @@ tabs
   cursor: pointer;
 }
 
-.tabs .tabs__list {
+.tabs-01 .tabs__list,
+.tabs-02 .tabs__list,
+.tabs-03 .tabs__list,
+.tabs-04 .tabs__list,
+.tabs-05 .tabs__list,
+.tabs-06 .tabs__list,
+.tabs-07 .tabs__list {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.tabs .tabs__item {
+.tabs-01 .tabs__item,
+.tabs-02 .tabs__item,
+.tabs-03 .tabs__item,
+.tabs-04 .tabs__item,
+.tabs-05 .tabs__item,
+.tabs-06 .tabs__item,
+.tabs-07 .tabs__item {
   position: relative;
   overflow: hidden;
   flex-grow: 1;
@@ -293,7 +330,13 @@ tabs
   letter-spacing: .1em;
 }
 
-.tabs .tabs__item:not(:last-child) {
+.tabs-01 .tabs__item:not(:last-child),
+.tabs-02 .tabs__item:not(:last-child),
+.tabs-03 .tabs__item:not(:last-child),
+.tabs-04 .tabs__item:not(:last-child),
+.tabs-05 .tabs__item:not(:last-child),
+.tabs-06 .tabs__item:not(:last-child),
+.tabs-07 .tabs__item:not(:last-child) {
   border-right: 1px solid #333;
 }
 
@@ -310,7 +353,13 @@ tabs
   background-color: #ddd;
 }
 
-.tabs .tabs__item input {
+.tabs-01 .tabs__item input,
+.tabs-02 .tabs__item input,
+.tabs-03 .tabs__item input,
+.tabs-04 .tabs__item input,
+.tabs-05 .tabs__item input,
+.tabs-06 .tabs__item input,
+.tabs-07 .tabs__item input  {
   border: 0;
   clip: rect(0, 0, 0, 0);
   height: 1px;
@@ -320,24 +369,6 @@ tabs
   position: absolute;
   white-space: nowrap;
   width: 1px;
-}
-
-.tabs .tabs__content {
-  overflow: hidden;
-  position: absolute;
-  height: 0;
-}
-
-
-
-.tabs .tabs__list:has(#tabs-all > input:checked)~#tabs-all__content,
-.tabs .tabs__list:has(#tabs-goal > input:checked)~#tabs-goal__content,
-.tabs .tabs__list:has(#tabs-target > input:checked)~#tabs-target__content,
-.tabs .tabs__list:has(#tabs-research > input:checked)~#tabs-research__content {
-  overflow: visible;
-  position: static;
-  height: auto;
-  /* padding: 2rem; */
 }
 
 .tabs .tabs__item:has(input:checked),
@@ -350,13 +381,94 @@ tabs
   border-top: 1px solid #333;
 }
 
+.tabs-01 .tabs__content,
+.tabs-02 .tabs__content,
+.tabs-03 .tabs__content,
+.tabs-04 .tabs__content,
+.tabs-05 .tabs__content,
+.tabs-06 .tabs__content,
+.tabs-07 .tabs__content {
+  overflow: hidden;
+  position: absolute;
+  height: 0;
+}
+.tabs-01 .tabs__list:has(#tabs-all > input:checked)~#tabs-all__content,
+.tabs-01 .tabs__list:has(#tabs-direction > input:checked)~#tabs-direction__content,
+.tabs-01 .tabs__list:has(#tabs-design > input:checked)~#tabs-design__content,
+.tabs-01 .tabs__list:has(#tabs-coding > input:checked)~#tabs-coding__content
+{
+  overflow: visible;
+  position: static;
+  height: auto;
+}
 
+
+.tabs-02 .tabs__list:has(#tabs-all > input:checked)~#tabs-all__content-02,
+.tabs-02 .tabs__list:has(#tabs-direction > input:checked)~#tabs-direction__content-02,
+.tabs-02 .tabs__list:has(#tabs-design > input:checked)~#tabs-design__content-02,
+.tabs-02 .tabs__list:has(#tabs-coding > input:checked)~#tabs-coding__content-02
+{
+  overflow: visible;
+  position: static;
+  height: auto;
+}
+
+.tabs-03 .tabs__list:has(#tabs-all > input:checked)~#tabs-all__content-03,
+.tabs-03 .tabs__list:has(#tabs-direction > input:checked)~#tabs-direction__content-03,
+.tabs-03 .tabs__list:has(#tabs-design > input:checked)~#tabs-design__content-03,
+.tabs-03 .tabs__list:has(#tabs-coding > input:checked)~#tabs-coding__content-03
+{
+  overflow: visible;
+  position: static;
+  height: auto;
+}
+
+.tabs-04 .tabs__list:has(#tabs-all > input:checked)~#tabs-all__content-04,
+.tabs-04 .tabs__list:has(#tabs-direction > input:checked)~#tabs-direction__content-04,
+.tabs-04 .tabs__list:has(#tabs-design > input:checked)~#tabs-design__content-04,
+.tabs-04 .tabs__list:has(#tabs-coding > input:checked)~#tabs-coding__content-04
+{
+  overflow: visible;
+  position: static;
+  height: auto;
+}
+
+.tabs-05 .tabs__list:has(#tabs-all > input:checked)~#tabs-all__content-05,
+.tabs-05 .tabs__list:has(#tabs-direction > input:checked)~#tabs-direction__content-05,
+.tabs-05 .tabs__list:has(#tabs-design > input:checked)~#tabs-design__content-05,
+.tabs-05 .tabs__list:has(#tabs-coding > input:checked)~#tabs-coding__content-05
+{
+  overflow: visible;
+  position: static;
+  height: auto;
+}
+
+.tabs-06 .tabs__list:has(#tabs-all > input:checked)~#tabs-all__content-06,
+.tabs-06 .tabs__list:has(#tabs-direction > input:checked)~#tabs-direction__content-06,
+.tabs-06 .tabs__list:has(#tabs-design > input:checked)~#tabs-design__content-06,
+.tabs-06 .tabs__list:has(#tabs-coding > input:checked)~#tabs-coding__content-06
+{
+  overflow: visible;
+  position: static;
+  height: auto;
+}
+
+.tabs-07 .tabs__list:has(#tabs-all > input:checked)~#tabs-all__content-07,
+.tabs-07 .tabs__list:has(#tabs-direction > input:checked)~#tabs-direction__content-07,
+.tabs-07 .tabs__list:has(#tabs-design > input:checked)~#tabs-design__content-07,
+.tabs-07 .tabs__list:has(#tabs-coding > input:checked)~#tabs-coding__content-07
+{
+  overflow: visible;
+  position: static;
+  height: auto;
+}
 
 
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
 }
+
