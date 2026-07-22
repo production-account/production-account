@@ -42,36 +42,34 @@
 			<div class="et-wrap">
 				<h2 class="header-02">SHOP SITE - 01</h2>
 				<div class="et-inner">
-					<a href="https://okami-821.github.io/02_work/" target="_blank" class="et-anchor btn"
+					<a href="https://production-account.github.io/01/" target="_blank" class="et-anchor btn"
 						aria-label="別タブでサイトページを表示します">
 						<picture class="picture">
 							<source srcset="assets/images/01.webp">
 							<img src="assets/images/01.jpg" width="480" height="250" alt="XX年制作">
-							<!-- <figcaption>サイトページへ<span class="material-symbols-outlined">open_in_new</span></figcaption> -->
+							<figcaption>サイトページへ<span class="material-symbols-outlined">open_in_new</span></figcaption>
 						</picture>
 					</a>
 					<div class="site-detail">
-						<div class="tabs">
-
-							<div class="tabs__list" role="tab" aria-label="タブメニュー：">
+						<div class="tabs tabs-01">
+							<div class="tabs__list" role="tab" aria-label="タブメニュー">
 								<label id="tabs-all" class="tabs__item" for="tabs-all-input">
-									<input id="tabs-all-input" type="radio" name="tabs" checked>
+									<input id="tabs-all-input" type="radio" name="tabs01" checked>
 									制作の担当範囲
 								</label>
-								<label id="tabs-goal" class="tabs__item" for="tabs-goal-input">
-									<input id="tabs-goal-input" type="radio" name="tabs">
+								<label id="tabs-direction" class="tabs__item" for="tabs-direction-input">
+									<input id="tabs-direction-input" type="radio" name="tabs01">
 									ディレクション
 								</label>
-								<label id="tabs-target" class="tabs__item" for="tabs-target-input">
-									<input id="tabs-target-input" type="radio" name="tabs">
+								<label id="tabs-design" class="tabs__item" for="tabs-design-input">
+									<input id="tabs-design-input" type="radio" name="tabs01">
 									デザイン
 								</label>
-								<label id="tabs-research" class="tabs__item" for="tabs-research-input">
-									<input id="tabs-research-input" type="radio" name="tabs">
+								<label id="tabs-coding" class="tabs__item" for="tabs-coding-input">
+									<input id="tabs-coding-input" type="radio" name="tabs01">
 									コーディング
 								</label>
 							</div>
-
 							<div class="tabs__content" id="tabs-all__content" role="tabpanel" aria-labelledby="tabs-all">
 								<div class="tabs-inner">
 									<table class="responsive-table stack-table">
@@ -92,24 +90,23 @@
 											</tr>
 											<tr>
 												<td data-label="コーディング">コーディング</td>
-												<td data-label="HTML5,CSS3,JavaScriptjQuary">HTML5, CSS3, JavaScript、jQuary</td>
+												<td data-label="HTML5, CSS3, JavaScript、jQuary">HTML5, CSS3, JavaScript、jQuary</td>
 											</tr>
 											<tr>
 												<td data-label="制作期間">制作期間</td>
-												<td data-label="コーディング期間：約50時間">1ヶ月（企画・仕様設計2週間、制作約50時間）</td>
+												<td data-label="1ヶ月（企画・仕様設計2週間、制作約50時間）">1ヶ月（企画・仕様設計2週間、制作約50時間）</td>
 											</tr>
 										</tbody>
 									</table>
 								</div>
 							</div>
-
-							<div class="tabs__content" id="tabs-goal__content" role="tabpanel" aria-labelledby="tabs-goal">
+							<div class="tabs__content" id="tabs-direction__content" role="tabpanel" aria-labelledby="tabs-direction">
 								<div class="tabs-inner">
 									<dl>
 										<dt>クライアントの目的 / 課題</dt>
 										<dd>
-											<span>目的：</span>新ブランド立ち上げに伴い、WEBサイトを使って認知度を上げたい<br>
-											<span>課題：</span>①競合ブランドとの差別化を明確にする ②信頼、安心感などのアピールする<br>
+											<span class="goal">目的</span>新ブランド立ち上げに伴い、WEBサイトを使って認知度を上げたい<br>
+											<span class="task">課題</span>①競合ブランドとの差別化を明確にする ②信頼、安心感などのアピールする<br>
 										</dd>
 										<dt>目的・課題改善に意識した点</dt>
 										<dd>
@@ -120,7 +117,7 @@
 									</dl>
 								</div>
 							</div>
-							<div class="tabs__content" id="tabs-target__content" role="tabpanel" aria-labelledby="tabs-target">
+							<div class="tabs__content" id="tabs-design__content" role="tabpanel" aria-labelledby="tabs-design">
 								<div class="tabs-inner">
 									<dl>
 										<dt>ワイヤーフレームの作成</dt>
@@ -128,33 +125,34 @@
 												href="https://okami-821.github.io/02_work/bag_extrasmall/index.html">該当ページ<span
 													class="material-symbols-outlined">open_in_new</span></a></dd>
 										<dd>
-											<span>課題：</span>
+											<span class="task">課題：</span>
 											商品数が多いため、どんな商品があったのか忘れてしまう<br>
-											<span>実績：</span>
+											<span class="results">実績：</span>
 											アイテムの組み合わせを提案できるように関連商品の枠を設置するワイヤーフレームを作成
 										</dd>
 									</dl>
 								</div>
 							</div>
-							<div class="tabs__content" id="tabs-research__content" role="tabpanel" aria-labelledby="tabs-research">
+							<div class="tabs__content" id="tabs-coding__content" role="tabpanel" aria-labelledby="tabs-coding">
 								<div class="tabs-inner">
 									<dl>
 										<dt>制作担当範囲</dt>
 										<dd>15〜20全ページの制作を担当</dd>
 										<dt>ユーザー操作に対するインタラクション設計</dt>
 										<dd>
-											<span>課題：</span>『急な来客や近所への外出にも対応できる上品さを両立させたスタイル』高級感と親しみやすさを表現<br>
-											<span>実績：</span>ブランドイメージを損なわないように、ゆったりした心地よいフェードイン・アニメーションを実装
+											<span class="task">課題</span>『急な来客や近所への外出にも対応できる上品さを両立させたスタイル』高級感と親しみやすさを表現<br>
+											<span class="results">実績</span>ブランドイメージを損なわないように、ゆったりした心地よいフェードイン・アニメーションを実装
 										</dd>
 										<dt>レスポンシブデザインの設計</dt>
 										<dd>
-											<span>課題：</span>スマートフォン閲覧疲れによる離脱を防ぐ<br>
-											<span>実績：</span>テキストが多い分画面が文字で埋め尽くされることを懸念。それに伴いスクロール疲れも想定されるため、アコーディオン機能を実装。ユーザーが求める情報にアクセスしやすい設計にしました。
+											<span class="task">課題</span>スマートフォン閲覧疲れによる離脱を防ぐ<br>
+											<span
+												class="results">実績</span>テキストが多い分画面が文字で埋め尽くされることを懸念。それに伴いスクロール疲れも想定されるため、アコーディオン機能を実装。ユーザーが求める情報にアクセスしやすい設計にしました。
 										</dd>
 										<dt>表示パフォーマンスについて</dt>
 										<dd>
-											<span>課題：</span>閲覧環境に負荷を与えないサイトにする<br>
-											<span>実績：</span>画像サイズの最適化、不要なプラグインの排除、jQueryライブラリを極力使わずJavaScriptで実装。また、
+											<span class="task">課題</span>閲覧環境に負荷を与えないサイトにする<br>
+											<span class="results">実績</span>画像サイズの最適化、不要なプラグインの排除、jQueryライブラリを極力使わずJavaScriptで実装。また、
 											PageSpeed Insightsのスコア向上と表示速度の高速化
 										</dd>
 									</dl>
@@ -169,7 +167,7 @@
 			<div class="et-wrap">
 				<h2 class="header-02">FEATURE PAGE - 02</h2>
 				<div class="et-inner">
-					<a href="https://okami-821.github.io/portfolio04/" target="_blank" class="et-anchor btn"
+					<a href="https://production-account.github.io/02/" target="_blank" class="et-anchor btn"
 						aria-label="別タブでサイトページを表示します">
 						<picture class="picture">
 							<source srcset="assets/images/02.webp">
@@ -178,7 +176,115 @@
 						</picture>
 					</a>
 					<div class="site-detail">
-						<dl>
+						<div class="tabs tabs-02">
+							<div class="tabs__list" role="tab" aria-label="タブメニュー">
+								<label id="tabs-all" class="tabs__item" for="tabs-all-input-02">
+									<input id="tabs-all-input-02" type="radio" name="tabs02" checked>
+									制作の担当範囲
+								</label>
+								<label id="tabs-direction" class="tabs__item" for="tabs-direction-input-02">
+									<input id="tabs-direction-input-02" type="radio" name="tabs02">
+									ディレクション
+								</label>
+								<label id="tabs-design" class="tabs__item" for="tabs-design-input-02">
+									<input id="tabs-design-input-02" type="radio" name="tabs02">
+									デザイン
+								</label>
+								<label id="tabs-coding" class="tabs__item" for="tabs-coding-input-02">
+									<input id="tabs-coding-input-02" type="radio" name="tabs02">
+									コーディング
+								</label>
+							</div>
+							<div class="tabs__content" id="tabs-all__content-02" role="tabpanel" aria-labelledby="tabs-all">
+								<div class="tabs-inner">
+									<table class="responsive-table stack-table">
+										<thead>
+											<tr>
+												<th>項目</th>
+												<th>担当内容 / 使用ツール</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td data-label="担当範囲">担当範囲</td>
+												<td data-label="コーダー/フロントエンジニア">コーダー/フロントエンジニア</td>
+											</tr>
+											<tr>
+												<td data-label="デザイン">デザイン</td>
+												<td data-label="画像レタッチ, サイトページの構成">画像レタッチ, サイトページの構成</td>
+											</tr>
+											<tr>
+												<td data-label="コーディング">コーディング</td>
+												<td data-label="HTML5, CSS3, JavaScript、jQuary">HTML5, CSS3, JavaScript、jQuary</td>
+											</tr>
+											<tr>
+												<td data-label="制作期間">制作期間</td>
+												<td data-label="7日間（企画・仕様設計2日間、制作約30時間）">7日間（企画・仕様設計2日間、制作約30時間）</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="tabs__content" id="tabs-direction__content-02" role="tabpanel" aria-labelledby="tabs-direction">
+								<div class="tabs-inner">
+									<dl>
+										<dt>クライアントの目的 / 課題</dt>
+										<dd>
+											<span class="goal">目的</span>紙カタログをただWEBに載せるのではなく、WEBらしいカタログページを作成する<br>
+											<span class="task">課題</span>単にスクロールして見るだけではなく、WEB特有のインタラクションや情報を探せる体験が求められていると判断<br>
+										</dd>
+										<dt>目的・課題改善に意識した点</dt>
+										<dd>
+											カタログ的な網羅性を保ちつつ、スライドショーやオーバーレイ機能を実装し、アイテムの見やすさを意識しました。
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="tabs__content" id="tabs-design__content-02" role="tabpanel" aria-labelledby="tabs-design">
+								<div class="tabs-inner">
+									<dl>
+										<dt>ページデザインに至るまで</dt>
+										<dd>
+											・既存の紙カタログデザインをレスポンシブデザインへと再構築<br>
+											・「読むこと」から「体験する」に変換<br>
+											・紙カタログ特徴は、画像とテキストと紙の質感を通じて世界観の体験ができることをふまえ、紙にできない体験ができることを狙って作成しました
+										</dd>
+										<!-- <dd>
+											<span class="task">課題：</span>
+											商品数が多いため、どんな商品があったのか忘れてしまう<br>
+											<span class="results">実績：</span>
+											アイテムの組み合わせを提案できるように関連商品の枠を設置するワイヤーフレームを作成
+										</dd> -->
+									</dl>
+								</div>
+							</div>
+							<div class="tabs__content" id="tabs-coding__content-02" role="tabpanel" aria-labelledby="tabs-coding">
+								<div class="tabs-inner">
+									<dl>
+										<dt>制作担当範囲</dt>
+										<dd>15〜20全ページの制作を担当</dd>
+										<dt>ユーザー操作に対するインタラクション設計</dt>
+										<dd>
+											<span class="task">課題</span>『急な来客や近所への外出にも対応できる上品さを両立させたスタイル』高級感と親しみやすさを表現<br>
+											<span class="results">実績</span>ブランドイメージを損なわないように、ゆったりした心地よいフェードイン・アニメーションを実装
+										</dd>
+										<dt>レスポンシブデザインの設計</dt>
+										<dd>
+											<span class="task">課題</span>スマートフォン閲覧疲れによる離脱を防ぐ<br>
+											<span
+												class="results">実績</span>テキストが多い分画面が文字で埋め尽くされることを懸念。それに伴いスクロール疲れも想定されるため、アコーディオン機能を実装。ユーザーが求める情報にアクセスしやすい設計にしました。
+										</dd>
+										<dt>表示パフォーマンスについて</dt>
+										<dd>
+											<span class="task">課題</span>閲覧環境に負荷を与えないサイトにする<br>
+											<span class="results">実績</span>画像サイズの最適化、不要なプラグインの排除、jQueryライブラリを極力使わずJavaScriptで実装。また、
+											PageSpeed Insightsのスコア向上と表示速度の高速化
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<!-- <dl>
 							<dt>制作の担当範囲と概要</dt>
 							<dd><span>担当範囲：</span>デザイン、全ページコーディング（マークアップ、動きの実装など）、レイアウトの調整、レスポンシブデザインの設計、インタラクション設計</dd>
 							<dd><span>制作期間：</span>コーディングに約7日間</dd>
@@ -189,7 +295,7 @@
 							<dd><span>サイトの目的：</span>トレンドの周知、資料の請求</dd>
 							<dd><span>ターゲット層：</span>服飾に携わる人、マスコミ</dd>
 							<dd><span>デザインの意図：</span>ブランドのシーズンキャンペーンサイト</dd>
-						</dl>
+						</dl> -->
 					</div>
 				</div>
 			</div>
@@ -207,6 +313,123 @@
 						</picture>
 					</a>
 					<div class="site-detail">
+						<div class="tabs tabs-03">
+							<div class="tabs__list" role="tab" aria-label="タブメニュー">
+								<label id="tabs-all" class="tabs__item" for="tabs-all-input-03">
+									<input id="tabs-all-input-03" type="radio" name="tabs03" checked>
+									制作の担当範囲
+								</label>
+								<label id="tabs-direction" class="tabs__item" for="tabs-direction-input-03">
+									<input id="tabs-direction-input-03" type="radio" name="tabs03">
+									ディレクション
+								</label>
+								<label id="tabs-design" class="tabs__item" for="tabs-design-input-03">
+									<input id="tabs-design-input-03" type="radio" name="tabs03">
+									デザイン
+								</label>
+								<label id="tabs-coding" class="tabs__item" for="tabs-coding-input-03">
+									<input id="tabs-coding-input-03" type="radio" name="tabs03">
+									コーディング
+								</label>
+							</div>
+							<div class="tabs__content" id="tabs-all__content-03" role="tabpanel" aria-labelledby="tabs-all">
+								<div class="tabs-inner">
+									<table class="responsive-table stack-table">
+										<thead>
+											<tr>
+												<th>項目</th>
+												<th>担当内容 / 使用ツール</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td data-label="担当範囲">担当範囲</td>
+												<td data-label="コーダー/フロントエンジニア">コーダー/フロントエンジニア</td>
+											</tr>
+											<tr>
+												<td data-label="デザイン">デザイン</td>
+												<td data-label="画像レタッチ, サイトページの構成">画像レタッチ, サイトページの構成</td>
+											</tr>
+											<tr>
+												<td data-label="コーディング">コーディング</td>
+												<td data-label="HTML5, CSS3, JavaScript、jQuary">HTML5, CSS3, JavaScript、jQuary</td>
+											</tr>
+											<tr>
+												<td data-label="制作期間">制作期間</td>
+												<td data-label="2日間">2日間</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="tabs__content" id="tabs-direction__content-03" role="tabpanel" aria-labelledby="tabs-direction">
+								<div class="tabs-inner">
+									<dl>
+										<dt>クライアントの目的 / 課題</dt>
+										<dd>
+											<span class="goal">目的</span>ー<br>
+											<span class="task">課題</span>ー<br>
+										</dd>
+										<dt>目的・課題改善に意識した点</dt>
+										<dd>ー</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="tabs__content" id="tabs-design__content-03" role="tabpanel" aria-labelledby="tabs-design">
+								<div class="tabs-inner">
+									<dl>
+										<dt>ページデザインに至るまで</dt>
+										<dd>
+											・ー<br>
+										</dd>
+										<!-- <dd>
+											<span class="task">課題：</span>
+											商品数が多いため、どんな商品があったのか忘れてしまう<br>
+											<span class="results">実績：</span>
+											アイテムの組み合わせを提案できるように関連商品の枠を設置するワイヤーフレームを作成
+										</dd> -->
+									</dl>
+								</div>
+							</div>
+							<div class="tabs__content" id="tabs-coding__content-03" role="tabpanel" aria-labelledby="tabs-coding">
+								<div class="tabs-inner">
+									<dl>
+										<dt>制作担当範囲</dt>
+										<dd>LP制作</dd>
+										<dt>ユーザー操作に対するインタラクション設計</dt>
+										<dd>
+											<span class="task">課題</span>ー<br>
+											<span class="results">実績</span>ー
+										</dd>
+										<dt>レスポンシブデザインの設計</dt>
+										<dd>
+											<span class="task">課題</span>ー<br>
+											<span
+												class="results">実績</span>ー
+										</dd>
+										<dt>表示パフォーマンスについて</dt>
+										<dd>
+											<span class="task">課題</span>ー<br>
+											<span class="results">実績</span>ー
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<!-- <dl>
+							<dt>制作の担当範囲と概要</dt>
+							<dd><span>担当範囲：</span>デザイン、全ページコーディング（マークアップ、動きの実装など）、レイアウトの調整、レスポンシブデザインの設計、インタラクション設計</dd>
+							<dd><span>制作期間：</span>コーディングに約7日間</dd>
+							<dd><span>使用ツール・言語：</span>Photoshop, HTML5, CSS3, JavaScript(jQuery) </dd>
+						</dl>
+						<dl>
+							<dt>制作の目的とターゲット</dt>
+							<dd><span>サイトの目的：</span>トレンドの周知、資料の請求</dd>
+							<dd><span>ターゲット層：</span>服飾に携わる人、マスコミ</dd>
+							<dd><span>デザインの意図：</span>ブランドのシーズンキャンペーンサイト</dd>
+						</dl> -->
+					</div>
+					<!-- <div class="site-detail">
 						<dl>
 							<dt>制作の担当範囲と概要</dt>
 							<dd><span>担当範囲：</span>デザイン、全ページコーディング（マークアップ、動きの実装など）、レイアウトの調整、レスポンシブデザインの設計、インタラクション設計</dd>
@@ -219,7 +442,7 @@
 							<dd><span>ターゲット層：</span>服飾に携わる人、マスコミ</dd>
 							<dd><span>デザインの意図：</span>ブランドのシーズンキャンペーンサイト</dd>
 						</dl>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</secttion>
@@ -236,6 +459,128 @@
 						</picture>
 					</a>
 					<div class="site-detail">
+						<div class="tabs tabs-04">
+							<div class="tabs__list" role="tab" aria-label="タブメニュー">
+								<label id="tabs-all" class="tabs__item" for="tabs-all-input-04">
+									<input id="tabs-all-input-04" type="radio" name="tabs04" checked>
+									制作の担当範囲
+								</label>
+								<label id="tabs-direction" class="tabs__item" for="tabs-direction-input-04">
+									<input id="tabs-direction-input-04" type="radio" name="tabs04">
+									ディレクション
+								</label>
+								<label id="tabs-design" class="tabs__item" for="tabs-design-input-04">
+									<input id="tabs-design-input-04" type="radio" name="tabs04">
+									デザイン
+								</label>
+								<label id="tabs-coding" class="tabs__item" for="tabs-coding-input-04">
+									<input id="tabs-coding-input-04" type="radio" name="tabs04">
+									コーディング
+								</label>
+							</div>
+							<div class="tabs__content" id="tabs-all__content-04" role="tabpanel" aria-labelledby="tabs-all">
+								<div class="tabs-inner">
+									<table class="responsive-table stack-table">
+										<thead>
+											<tr>
+												<th>項目</th>
+												<th>担当内容 / 使用ツール</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td data-label="担当範囲">担当範囲</td>
+												<td data-label="コーダー/フロントエンジニア">コーダー/フロントエンジニア</td>
+											</tr>
+											<tr>
+												<td data-label="デザイン">デザイン</td>
+												<td data-label="画像レタッチ, サイトページの構成">画像レタッチ, サイトページの構成</td>
+											</tr>
+											<tr>
+												<td data-label="コーディング">コーディング</td>
+												<td data-label="HTML5, CSS3, JavaScript、jQuary">HTML5, CSS3, JavaScript、jQuary</td>
+											</tr>
+											<tr>
+												<td data-label="制作期間">制作期間</td>
+												<td data-label="7日間（企画・仕様設計2日間、制作約30時間）">7日間（企画・仕様設計2日間、制作約30時間）</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="tabs__content" id="tabs-direction__content-04" role="tabpanel" aria-labelledby="tabs-direction">
+								<div class="tabs-inner">
+									<dl>
+										<dt>クライアントの目的 / 課題</dt>
+										<dd>
+											<span class="goal">目的</span>紙カタログをただWEBに載せるのではなく、WEBらしいカタログページを作成する<br>
+											<span class="task">課題</span>単にスクロールして見るだけではなく、WEB特有のインタラクションや情報を探せる体験が求められていると判断<br>
+										</dd>
+										<dt>目的・課題改善に意識した点</dt>
+										<dd>
+											カタログ的な網羅性を保ちつつ、スライドショーやオーバーレイ機能を実装し、アイテムの見やすさを意識しました。
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="tabs__content" id="tabs-design__content-04" role="tabpanel" aria-labelledby="tabs-design">
+								<div class="tabs-inner">
+									<dl>
+										<dt>ページデザインに至るまで</dt>
+										<dd>
+											・既存の紙カタログデザインをレスポンシブデザインへと再構築<br>
+											・「読むこと」から「体験する」に変換<br>
+											・紙カタログ特徴は、画像とテキストと紙の質感を通じて世界観の体験ができることをふまえ、紙にできない体験ができることを狙って作成しました
+										</dd>
+										<!-- <dd>
+											<span class="task">課題：</span>
+											商品数が多いため、どんな商品があったのか忘れてしまう<br>
+											<span class="results">実績：</span>
+											アイテムの組み合わせを提案できるように関連商品の枠を設置するワイヤーフレームを作成
+										</dd> -->
+									</dl>
+								</div>
+							</div>
+							<div class="tabs__content" id="tabs-coding__content-04" role="tabpanel" aria-labelledby="tabs-coding">
+								<div class="tabs-inner">
+									<dl>
+										<dt>制作担当範囲</dt>
+										<dd>15〜20全ページの制作を担当</dd>
+										<dt>ユーザー操作に対するインタラクション設計</dt>
+										<dd>
+											<span class="task">課題</span>『急な来客や近所への外出にも対応できる上品さを両立させたスタイル』高級感と親しみやすさを表現<br>
+											<span class="results">実績</span>ブランドイメージを損なわないように、ゆったりした心地よいフェードイン・アニメーションを実装
+										</dd>
+										<dt>レスポンシブデザインの設計</dt>
+										<dd>
+											<span class="task">課題</span>スマートフォン閲覧疲れによる離脱を防ぐ<br>
+											<span
+												class="results">実績</span>テキストが多い分画面が文字で埋め尽くされることを懸念。それに伴いスクロール疲れも想定されるため、アコーディオン機能を実装。ユーザーが求める情報にアクセスしやすい設計にしました。
+										</dd>
+										<dt>表示パフォーマンスについて</dt>
+										<dd>
+											<span class="task">課題</span>閲覧環境に負荷を与えないサイトにする<br>
+											<span class="results">実績</span>画像サイズの最適化、不要なプラグインの排除、jQueryライブラリを極力使わずJavaScriptで実装。また、
+											PageSpeed Insightsのスコア向上と表示速度の高速化
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<!-- <dl>
+							<dt>制作の担当範囲と概要</dt>
+							<dd><span>担当範囲：</span>デザイン、全ページコーディング（マークアップ、動きの実装など）、レイアウトの調整、レスポンシブデザインの設計、インタラクション設計</dd>
+							<dd><span>制作期間：</span>コーディングに約7日間</dd>
+							<dd><span>使用ツール・言語：</span>Photoshop, HTML5, CSS3, JavaScript(jQuery) </dd>
+						</dl>
+						<dl>
+							<dt>制作の目的とターゲット</dt>
+							<dd><span>サイトの目的：</span>トレンドの周知、資料の請求</dd>
+							<dd><span>ターゲット層：</span>服飾に携わる人、マスコミ</dd>
+							<dd><span>デザインの意図：</span>ブランドのシーズンキャンペーンサイト</dd>
+						</dl> -->
+					</div>
+					<!-- <div class="site-detail">
 						<dl>
 							<dt>制作の担当範囲と概要</dt>
 							<dd><span>担当範囲：</span>全ページコーディング（マークアップ、動きの実装など）、レイアウトの調整、レスポンシブデザインの設計、インタラクション設計</dd>
@@ -248,7 +593,7 @@
 							<dd><span>ターゲット層：</span>ー</dd>
 							<dd><span>デザインの意図：</span>レスポンシブにシームレスに対応したデザインを目的とした制作（今後改良予定）</dd>
 						</dl>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</secttion>
@@ -265,6 +610,125 @@
 						</picture>
 					</a>
 					<div class="site-detail">
+						<div class="tabs tabs-05">
+							<div class="tabs__list" role="tab" aria-label="タブメニュー">
+								<label id="tabs-all" class="tabs__item" for="tabs-all-input-05">
+									<input id="tabs-all-input-05" type="radio" name="tabs05" checked>
+									制作の担当範囲
+								</label>
+								<label id="tabs-direction" class="tabs__item" for="tabs-direction-input-05">
+									<input id="tabs-direction-input-05" type="radio" name="tabs05">
+									ディレクション
+								</label>
+								<label id="tabs-design" class="tabs__item" for="tabs-design-input-05">
+									<input id="tabs-design-input-05" type="radio" name="tabs05">
+									デザイン
+								</label>
+								<label id="tabs-coding" class="tabs__item" for="tabs-coding-input-05">
+									<input id="tabs-coding-input-05" type="radio" name="tabs05">
+									コーディング
+								</label>
+							</div>
+							<div class="tabs__content" id="tabs-all__content-05" role="tabpanel" aria-labelledby="tabs-all">
+								<div class="tabs-inner">
+									<table class="responsive-table stack-table">
+										<thead>
+											<tr>
+												<th>項目</th>
+												<th>担当内容 / 使用ツール</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td data-label="担当範囲">担当範囲</td>
+												<td data-label="コーダー/フロントエンジニア">コーダー/フロントエンジニア</td>
+											</tr>
+											<tr>
+												<td data-label="デザイン">デザイン</td>
+												<td data-label="画像レタッチ, サイトページの構成">画像レタッチ, サイトページの構成</td>
+											</tr>
+											<tr>
+												<td data-label="コーディング">コーディング</td>
+												<td data-label="HTML5, CSS3, JavaScript、jQuary">HTML5, CSS3, JavaScript、jQuary</td>
+											</tr>
+											<tr>
+												<td data-label="制作期間">制作期間</td>
+												<td data-label="7日間（企画・仕様設計2日間、制作約30時間）">7日間（企画・仕様設計2日間、制作約30時間）</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="tabs__content" id="tabs-direction__content-05" role="tabpanel" aria-labelledby="tabs-direction">
+								<div class="tabs-inner">
+									<dl>
+										<dt>クライアントの目的 / 課題</dt>
+										<dd>
+											<span class="goal">目的</span>ー<br>
+											<span class="task">課題</span>ー<br>
+										</dd>
+										<dt>目的・課題改善に意識した点</dt>
+										<dd>
+											ー
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="tabs__content" id="tabs-design__content-05" role="tabpanel" aria-labelledby="tabs-design">
+								<div class="tabs-inner">
+									<dl>
+										<dt>ページデザインに至るまで</dt>
+										<dd>
+											・ー<br>
+										</dd>
+										<!-- <dd>
+											<span class="task">課題：</span>
+											商品数が多いため、どんな商品があったのか忘れてしまう<br>
+											<span class="results">実績：</span>
+											アイテムの組み合わせを提案できるように関連商品の枠を設置するワイヤーフレームを作成
+										</dd> -->
+									</dl>
+								</div>
+							</div>
+							<div class="tabs__content" id="tabs-coding__content-05" role="tabpanel" aria-labelledby="tabs-coding">
+								<div class="tabs-inner">
+									<dl>
+										<dt>制作担当範囲</dt>
+										<dd>15〜20全ページの制作を担当</dd>
+										<dt>ユーザー操作に対するインタラクション設計</dt>
+										<dd>
+											<span class="task">課題</span>ー<br>
+											<span class="results">実績</span>ー
+										</dd>
+										<dt>レスポンシブデザインの設計</dt>
+										<dd>
+											<span class="task">課題</span>ー<br>
+											<span
+												class="results">実績</span>ー
+										</dd>
+										<dt>表示パフォーマンスについて</dt>
+										<dd>
+											<span class="task">課題</span>ー<br>
+											<span class="results">実績</span>ー
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<!-- <dl>
+							<dt>制作の担当範囲と概要</dt>
+							<dd><span>担当範囲：</span>デザイン、全ページコーディング（マークアップ、動きの実装など）、レイアウトの調整、レスポンシブデザインの設計、インタラクション設計</dd>
+							<dd><span>制作期間：</span>コーディングに約7日間</dd>
+							<dd><span>使用ツール・言語：</span>Photoshop, HTML5, CSS3, JavaScript(jQuery) </dd>
+						</dl>
+						<dl>
+							<dt>制作の目的とターゲット</dt>
+							<dd><span>サイトの目的：</span>トレンドの周知、資料の請求</dd>
+							<dd><span>ターゲット層：</span>服飾に携わる人、マスコミ</dd>
+							<dd><span>デザインの意図：</span>ブランドのシーズンキャンペーンサイト</dd>
+						</dl> -->
+					</div>
+					<!-- <div class="site-detail">
 						<dl>
 							<dt>制作の担当範囲と概要</dt>
 							<dd><span>担当範囲：</span>デザイン、コーディング（マークアップ、動きの実装など）、レイアウトの調整、レスポンシブデザインの設計、インタラクション設計</dd>
@@ -277,7 +741,7 @@
 							<dd><span>ターゲット層：</span>サッカーに興味がある人、サッカー観戦によく訪れる人</dd>
 							<dd><span>デザインの意図：</span>イベントにて煩わしさから解放されて簡単に決済ができることを求める人</dd>
 						</dl>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</secttion>
@@ -294,6 +758,125 @@
 						</picture>
 					</a>
 					<div class="site-detail">
+						<div class="tabs tabs-06">
+							<div class="tabs__list" role="tab" aria-label="タブメニュー">
+								<label id="tabs-all" class="tabs__item" for="tabs-all-input-06">
+									<input id="tabs-all-input-06" type="radio" name="tabs06" checked>
+									制作の担当範囲
+								</label>
+								<label id="tabs-direction" class="tabs__item" for="tabs-direction-input-06">
+									<input id="tabs-direction-input-06" type="radio" name="tabs06">
+									ディレクション
+								</label>
+								<label id="tabs-design" class="tabs__item" for="tabs-design-input-06">
+									<input id="tabs-design-input-06" type="radio" name="tabs06">
+									デザイン
+								</label>
+								<label id="tabs-coding" class="tabs__item" for="tabs-coding-input-06">
+									<input id="tabs-coding-input-06" type="radio" name="tabs06">
+									コーディング
+								</label>
+							</div>
+							<div class="tabs__content" id="tabs-all__content-06" role="tabpanel" aria-labelledby="tabs-all">
+								<div class="tabs-inner">
+									<table class="responsive-table stack-table">
+										<thead>
+											<tr>
+												<th>項目</th>
+												<th>担当内容 / 使用ツール</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td data-label="担当範囲">担当範囲</td>
+												<td data-label="コーダー/フロントエンジニア">コーダー/フロントエンジニア</td>
+											</tr>
+											<tr>
+												<td data-label="デザイン">デザイン</td>
+												<td data-label="画像レタッチ, サイトページの構成">画像レタッチ, サイトページの構成</td>
+											</tr>
+											<tr>
+												<td data-label="コーディング">コーディング</td>
+												<td data-label="HTML5, CSS3, JavaScript、jQuary">HTML5, CSS3, JavaScript、jQuary</td>
+											</tr>
+											<tr>
+												<td data-label="制作期間">制作期間</td>
+												<td data-label="7日間（企画・仕様設計2日間、制作約30時間）">7日間（企画・仕様設計2日間、制作約30時間）</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="tabs__content" id="tabs-direction__content-06" role="tabpanel" aria-labelledby="tabs-direction">
+								<div class="tabs-inner">
+									<dl>
+										<dt>クライアントの目的 / 課題</dt>
+										<dd>
+											<span class="goal">目的</span>ー<br>
+											<span class="task">課題</span>ー<br>
+										</dd>
+										<dt>目的・課題改善に意識した点</dt>
+										<dd>
+											ー
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="tabs__content" id="tabs-design__content-06" role="tabpanel" aria-labelledby="tabs-design">
+								<div class="tabs-inner">
+									<dl>
+										<dt>ページデザインに至るまで</dt>
+										<dd>
+											・ー<br>
+										</dd>
+										<!-- <dd>
+											<span class="task">課題：</span>
+											商品数が多いため、どんな商品があったのか忘れてしまう<br>
+											<span class="results">実績：</span>
+											アイテムの組み合わせを提案できるように関連商品の枠を設置するワイヤーフレームを作成
+										</dd> -->
+									</dl>
+								</div>
+							</div>
+							<div class="tabs__content" id="tabs-coding__content-06" role="tabpanel" aria-labelledby="tabs-coding">
+								<div class="tabs-inner">
+									<dl>
+										<dt>制作担当範囲</dt>
+										<dd></dd>
+										<dt></dt>
+										<dd>
+											<span class="task">課題</span><br>
+											<span class="results">実績</span>
+										</dd>
+										<dt>レスポンシブデザインの設計</dt>
+										<dd>
+											<span class="task">課題</span><br>
+											<span
+												class="results">実績</span>
+										</dd>
+										<dt>表示パフォーマンスについて</dt>
+										<dd>
+											<span class="task">課題</span><br>
+											<span class="results">実績</span>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<!-- <dl>
+							<dt>制作の担当範囲と概要</dt>
+							<dd><span>担当範囲：</span>デザイン、全ページコーディング（マークアップ、動きの実装など）、レイアウトの調整、レスポンシブデザインの設計、インタラクション設計</dd>
+							<dd><span>制作期間：</span>コーディングに約7日間</dd>
+							<dd><span>使用ツール・言語：</span>Photoshop, HTML5, CSS3, JavaScript(jQuery) </dd>
+						</dl>
+						<dl>
+							<dt>制作の目的とターゲット</dt>
+							<dd><span>サイトの目的：</span>トレンドの周知、資料の請求</dd>
+							<dd><span>ターゲット層：</span>服飾に携わる人、マスコミ</dd>
+							<dd><span>デザインの意図：</span>ブランドのシーズンキャンペーンサイト</dd>
+						</dl> -->
+					</div>
+					<!-- <div class="site-detail">
 						<dl>
 							<dt>制作の担当範囲と概要</dt>
 							<dd><span>担当範囲：</span>ページコーディング（マークアップ、動きの実装など）、レイアウトの調整、レスポンシブデザインの設計、インタラクション設計、デザイン</dd>
@@ -325,7 +908,7 @@
 									style="text-decoration: underline;">卒業生インタビュー</a>
 							</dd>
 						</dl>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</secttion>
@@ -341,6 +924,125 @@
 						</picture>
 					</a>
 					<div class="site-detail">
+						<div class="tabs tabs-07">
+							<div class="tabs__list" role="tab" aria-label="タブメニュー">
+								<label id="tabs-all" class="tabs__item" for="tabs-all-input-07">
+									<input id="tabs-all-input-07" type="radio" name="tabs07" checked>
+									制作の担当範囲
+								</label>
+								<label id="tabs-direction" class="tabs__item" for="tabs-direction-input-07">
+									<input id="tabs-direction-input-07" type="radio" name="tabs07">
+									ディレクション
+								</label>
+								<label id="tabs-design" class="tabs__item" for="tabs-design-input-07">
+									<input id="tabs-design-input-07" type="radio" name="tabs07">
+									デザイン
+								</label>
+								<label id="tabs-coding" class="tabs__item" for="tabs-coding-input-07">
+									<input id="tabs-coding-input-07" type="radio" name="tabs07">
+									コーディング
+								</label>
+							</div>
+							<div class="tabs__content" id="tabs-all__content-07" role="tabpanel" aria-labelledby="tabs-all">
+								<div class="tabs-inner">
+									<table class="responsive-table stack-table">
+										<thead>
+											<tr>
+												<th>項目</th>
+												<th>担当内容 / 使用ツール</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td data-label="担当範囲">担当範囲</td>
+												<td data-label="コーダー/フロントエンジニア">コーダー/フロントエンジニア</td>
+											</tr>
+											<tr>
+												<td data-label="デザイン">デザイン</td>
+												<td data-label="画像レタッチ, サイトページの構成">画像レタッチ, サイトページの構成</td>
+											</tr>
+											<tr>
+												<td data-label="コーディング">コーディング</td>
+												<td data-label="HTML5, CSS3, JavaScript、jQuary">HTML5, CSS3, JavaScript、jQuary</td>
+											</tr>
+											<tr>
+												<td data-label="制作期間">制作期間</td>
+												<td data-label="7日間（企画・仕様設計2日間、制作約30時間）">7日間（企画・仕様設計2日間、制作約30時間）</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="tabs__content" id="tabs-direction__content-07" role="tabpanel" aria-labelledby="tabs-direction">
+								<div class="tabs-inner">
+									<dl>
+										<dt>クライアントの目的 / 課題</dt>
+										<dd>
+											<span class="goal">目的</span>ー<br>
+											<span class="task">課題</span>ー<br>
+										</dd>
+										<dt>目的・課題改善に意識した点</dt>
+										<dd>
+											ー
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="tabs__content" id="tabs-design__content-07" role="tabpanel" aria-labelledby="tabs-design">
+								<div class="tabs-inner">
+									<dl>
+										<dt>ページデザインに至るまで</dt>
+										<dd>
+											・ー<br>
+										</dd>
+										<!-- <dd>
+											<span class="task">課題：</span>
+											商品数が多いため、どんな商品があったのか忘れてしまう<br>
+											<span class="results">実績：</span>
+											アイテムの組み合わせを提案できるように関連商品の枠を設置するワイヤーフレームを作成
+										</dd> -->
+									</dl>
+								</div>
+							</div>
+							<div class="tabs__content" id="tabs-coding__content-07" role="tabpanel" aria-labelledby="tabs-coding">
+								<div class="tabs-inner">
+									<dl>
+										<dt>制作担当範囲</dt>
+										<dd>全ページ制作</dd>
+										<dt>ユーザー操作に対するインタラクション設計</dt>
+										<dd>
+											<span class="task">課題</span>ー<br>
+											<span class="results">実績</span>ー
+										</dd>
+										<dt>レスポンシブデザインの設計</dt>
+										<dd>
+											<span class="task">課題</span>ー<br>
+											<span
+												class="results">実績</span>ー
+										</dd>
+										<dt>表示パフォーマンスについて</dt>
+										<dd>
+											<span class="task">課題</span>ー<br>
+											<span class="results">実績</span>ー
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<!-- <dl>
+							<dt>制作の担当範囲と概要</dt>
+							<dd><span>担当範囲：</span>デザイン、全ページコーディング（マークアップ、動きの実装など）、レイアウトの調整、レスポンシブデザインの設計、インタラクション設計</dd>
+							<dd><span>制作期間：</span>コーディングに約7日間</dd>
+							<dd><span>使用ツール・言語：</span>Photoshop, HTML5, CSS3, JavaScript(jQuery) </dd>
+						</dl>
+						<dl>
+							<dt>制作の目的とターゲット</dt>
+							<dd><span>サイトの目的：</span>トレンドの周知、資料の請求</dd>
+							<dd><span>ターゲット層：</span>服飾に携わる人、マスコミ</dd>
+							<dd><span>デザインの意図：</span>ブランドのシーズンキャンペーンサイト</dd>
+						</dl> -->
+					</div>
+					<!-- <div class="site-detail">
 						<dl>
 							<dt>制作の担当範囲と概要</dt>
 							<dd><span>担当範囲：</span>デザイン提案、全ページコーディング（マークアップ、動きの実装など）、レイアウトの調整、レスポンシブデザインの設計、インタラクション設計</dd>
@@ -353,38 +1055,10 @@
 							<dd><span>ターゲット層：</span>一生物として家具を所有したい人、理想とする日常があってそれを実現するツールを求めている人</dd>
 							<dd><span>デザインの意図：</span>使い捨てではなく持ち続ける喜び、オーナーになるという自覚をシェアするような意図</dd>
 						</dl>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</secttion>
-		<!-- <secttion class="et-slide" id="tab-08">
-			<div class="et-wrap">
-				<h2 class="header-02">SHOP SITE - 08</h2>
-				<div class="et-inner">
-					<a href="https://okami-821.github.io/portfolio01/" target="_blank" class="et-anchor btn" aria-label="別タブでサイトページを表示します">
-						<picture class="picture">
-							<source srcset="assets/images/07.webp">
-							<img src="assets/images/07.jpg" width="480" height="250" alt="XX年制作">
-							<figcaption>サイトページへ<span class="material-symbols-outlined">open_in_new</span></figcaption>
-						</picture>
-					</a>
-					<div class="site-detail">
-						<dl>
-							<dt>制作の担当範囲と概要</dt>
-							<dd><span>担当範囲：</span>デザイン提案、全ページコーディング（マークアップ、動きの実装など）、レイアウトの調整、レスポンシブデザインの設計、インタラクション設計</dd>
-							<dd><span>制作期間：</span>デザインに約1ヶ月、コーディングに約20日間</dd>
-							<dd><span>使用ツール・言語：</span>HTML, CSS, JavaScript </dd>
-						</dl>
-						<dl>
-							<dt>制作の目的とターゲット</dt>
-							<dd><span>サイトの目的：</span>知人のビジネス立ち上げに伴いサイトを制作</dd>
-							<dd><span>ターゲット層：</span>一生物として家具を所有したい人、理想とする日常があってそれを実現するツールを求めている人</dd>
-							<dd><span>デザインの意図：</span>使い捨てではなく持ち続ける喜び、オーナーになるという自覚をシェアするような意図</dd>
-						</dl>
-					</div>
-				</div>
-			</div>
-		</secttion> -->
 	</main>
 	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
 		crossorigin="anonymous"></script>
