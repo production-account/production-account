@@ -1,0 +1,88 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.project-card__title {
+  color: #FFF;
+}
+.project-card__spec-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.project-card__spec-group {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.project-card__spec-name {
+  width: 100px;
+  color: #FFF;
+}
+.project-card__spec-detail {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  color: #FFF;
+}
+.project-card__spec-detail .inline {
+  border: 1px solid;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0px 10px;
+}
+.project-card__spec-detail .tip-gd {
+  background-color: deeppink;
+}
+.project-card__spec-detail .tip-ui {
+  background-color: #A259FF;
+}
+.project-card__spec-detail .tip-co {
+  background-color: #007ACC;
+}
+.project-card__link-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.project-card__link-button {
+  color: white;
+  width: 200px;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #f5576c);
+  background-size: 400% 400%;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.project-card__link-button:hover {
+  background-position: 100% 100%;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  animation: gradientRotate 200s ease infinite;
+  color: #FFF;
+}
+
+@keyframes gradientRotate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}/*# sourceMappingURL=common.css.map */
