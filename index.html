@@ -6,1063 +6,344 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>PORTFORIO</title>
 	<!-- Favicons -->
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/fabicon.png" />
 	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
-		href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Sora:wght@100..800&family=Zen+Kaku+Gothic+Antique&family=Zen+Kurenaido&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kosugi&family=Michroma&family=Yeseva+One&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=open_in_new" />
-
-	<link rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=open_in_new" />
 	<!-- CSS Styles -->
 	<link rel="stylesheet" href="./assets/css/style.css" />
+	<!-- <link rel="stylesheet" href="./assets/css/common.css" /> -->
+	<link rel="stylesheet" href="common.css" />
+
+
+
 </head>
 
 <body>
-	<section class="et-hero-tabs">
-		<h1 class="header-01">PORTFORIO</h1>
-		<!-- <h3 class="header-03">sticky tab nav</h3> -->
-		<nav class="et-hero-tabs-container">
-			<a class="et-hero-tab" href="#tab-01">01</a>
-			<a class="et-hero-tab" href="#tab-02">02</a>
-			<a class="et-hero-tab" href="#tab-03">03</a>
-			<a class="et-hero-tab" href="#tab-04">04</a>
-			<a class="et-hero-tab" href="#tab-05">05</a>
-			<a class="et-hero-tab" href="#tab-06">06</a>
-			<a class="et-hero-tab" href="#tab-07">07</a>
-			<span class="et-hero-tab-slider"></span>
-		</nav>
-	</section>
-	<main class="et-main">
-		<section class="et-slide" id="tab-01">
-			<div class="et-wrap">
-				<h2 class="header-02">SHOP SITE - 01</h2>
-				<div class="et-inner">
-					<a href="https://production-account.github.io/01/" target="_blank" class="et-anchor btn"
-						aria-label="別タブでサイトページを表示します">
-						<picture class="picture">
-							<source srcset="assets/images/01.webp">
-							<img src="assets/images/01.jpg" width="480" height="250" alt="XX年制作">
-							<figcaption>サイトページへ<span class="material-symbols-outlined">open_in_new</span></figcaption>
-						</picture>
-					</a>
-					<div class="site-detail">
-						<div class="tabs tabs-01">
-							<div class="tabs__list" role="tab" aria-label="タブメニュー">
-								<label id="tabs-all" class="tabs__item" for="tabs-all-input">
-									<input id="tabs-all-input" type="radio" name="tabs01" checked>
-									制作の担当範囲
-								</label>
-								<label id="tabs-direction" class="tabs__item" for="tabs-direction-input">
-									<input id="tabs-direction-input" type="radio" name="tabs01">
-									ディレクション
-								</label>
-								<label id="tabs-design" class="tabs__item" for="tabs-design-input">
-									<input id="tabs-design-input" type="radio" name="tabs01">
-									デザイン
-								</label>
-								<label id="tabs-coding" class="tabs__item" for="tabs-coding-input">
-									<input id="tabs-coding-input" type="radio" name="tabs01">
-									コーディング
-								</label>
-							</div>
-							<div class="tabs__content" id="tabs-all__content" role="tabpanel" aria-labelledby="tabs-all">
-								<div class="tabs-inner">
-									<table class="responsive-table stack-table">
-										<thead>
-											<tr>
-												<th>項目</th>
-												<th>担当内容 / 使用ツール</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td data-label="担当範囲">担当範囲</td>
-												<td data-label="コーダー/フロントエンジニア（ディレクション兼務）">コーダー/フロントエンジニア（ディレクション兼務）</td>
-											</tr>
-											<tr>
-												<td data-label="デザイン">デザイン</td>
-												<td data-label="ワイヤーフレーム作成, 画像レタッチ, サイトの構成">ワイヤーフレーム作成, 画像レタッチ, サイトの構成</td>
-											</tr>
-											<tr>
-												<td data-label="コーディング">コーディング</td>
-												<td data-label="HTML5, CSS3, JavaScript、jQuary">HTML5, CSS3, JavaScript、jQuary</td>
-											</tr>
-											<tr>
-												<td data-label="制作期間">制作期間</td>
-												<td data-label="1ヶ月（企画・仕様設計2週間、制作約50時間）">1ヶ月（企画・仕様設計2週間、制作約50時間）</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-							<div class="tabs__content" id="tabs-direction__content" role="tabpanel" aria-labelledby="tabs-direction">
-								<div class="tabs-inner">
-									<dl>
-										<dt>クライアントの目的 / 課題</dt>
-										<dd>
-											<span class="goal">目的</span>新ブランド立ち上げに伴い、WEBサイトを使って認知度を上げたい<br>
-											<span class="task">課題</span>①競合ブランドとの差別化を明確にする ②信頼、安心感などのアピールする<br>
-										</dd>
-										<dt>目的・課題改善に意識した点</dt>
-										<dd>
-											信頼・安心感を向上させるために、品質に関するこだわりをページ内に盛り込むことを提案。『急な来客や近所への外出にも対応できる上品さを両立させたスタイル』をコンセプト・キーとして考え、普段使いに取り入れやすい「お手入れ方法」や「商品について」などのコンテンツを提案。
-										</dd>
-										<dt>その他</dt>
-										<dd>コーディングの知識を活かし、技術的なリスクや工数を先回りして予測。手戻りを防ぐことに貢献しました。</dd>
-									</dl>
-								</div>
-							</div>
-							<div class="tabs__content" id="tabs-design__content" role="tabpanel" aria-labelledby="tabs-design">
-								<div class="tabs-inner">
-									<dl>
-										<dt>ワイヤーフレームの作成</dt>
-										<dd>商品に関する詳細ページのワイヤーフレームを担当<a
-												href="https://okami-821.github.io/02_work/bag_extrasmall/index.html">該当ページ<span
-													class="material-symbols-outlined">open_in_new</span></a></dd>
-										<dd>
-											<span class="task">課題：</span>
-											商品数が多いため、どんな商品があったのか忘れてしまう<br>
-											<span class="results">実績：</span>
-											アイテムの組み合わせを提案できるように関連商品の枠を設置するワイヤーフレームを作成
-										</dd>
-									</dl>
-								</div>
-							</div>
-							<div class="tabs__content" id="tabs-coding__content" role="tabpanel" aria-labelledby="tabs-coding">
-								<div class="tabs-inner">
-									<dl>
-										<dt>制作担当範囲</dt>
-										<dd>15〜20全ページの制作を担当</dd>
-										<dt>ユーザー操作に対するインタラクション設計</dt>
-										<dd>
-											<span class="task">課題</span>『急な来客や近所への外出にも対応できる上品さを両立させたスタイル』高級感と親しみやすさを表現<br>
-											<span class="results">実績</span>ブランドイメージを損なわないように、ゆったりした心地よいフェードイン・アニメーションを実装
-										</dd>
-										<dt>レスポンシブデザインの設計</dt>
-										<dd>
-											<span class="task">課題</span>スマートフォン閲覧疲れによる離脱を防ぐ<br>
-											<span
-												class="results">実績</span>テキストが多い分画面が文字で埋め尽くされることを懸念。それに伴いスクロール疲れも想定されるため、アコーディオン機能を実装。ユーザーが求める情報にアクセスしやすい設計にしました。
-										</dd>
-										<dt>表示パフォーマンスについて</dt>
-										<dd>
-											<span class="task">課題</span>閲覧環境に負荷を与えないサイトにする<br>
-											<span class="results">実績</span>画像サイズの最適化、不要なプラグインの排除、jQueryライブラリを極力使わずJavaScriptで実装。また、
-											PageSpeed Insightsのスコア向上と表示速度の高速化
-										</dd>
-									</dl>
-								</div>
-							</div>
-						</div>
+	<header>
+		<h1>PORTFORIO</h1>
+	</header>
+
+
+	<main class="main">
+		<div class="list">
+			<picture>
+				<source srcset="assets/images/01.webp" type="image/webp">
+				<img src="assets/images/01.jpg" alt="">
+			</picture>
+			<div class="project-card">
+				<h3 class="project-card__title">HOUSE OF LOTUS 公式Webサイト（ジャンル：アパレル）</h3>
+				<dl class="project-card__spec-list">
+					<div class="project-card__spec-group">
+						<dt class="project-card__spec-name">担当範囲</dt>
+						<dd class="project-card__spec-detail">
+							<span class="inline tip-ui">UIデザイン</span>
+							<span class="inline tip-co">コーディング</span>
+						</dd>
 					</div>
+					<div class="project-card__spec-group">
+						<dt class="project-card__spec-name">制作期間</dt>
+						<dd class="project-card__spec-detail">20日間（2019年）</dd>
+					</div>
+					<div class="project-card__spec-group">
+						<dt class="project-card__spec-name">使用ツール</dt>
+						<dd class="project-card__spec-detail">PhotShop VSCode</dd>
+					</div>
+					<div class="project-card__spec-group">
+						<dt class="project-card__spec-name">ターゲット</dt>
+						<dd class="project-card__spec-detail">20代〜40代の女性、日常着にこだわりがある新規顧客</dd>
+					</div>
+				</dl>
+				<a href="https://production-account.github.io/01/" aria-label="作品詳細を新しいウィンドウで開く" target="_blank"
+					rel="noopener noreferrer" class="project-card__link-button">
+					<span>Webサイトへ</span>
+					<svg class="project-card__link-icon" xmlns="http://w3.org" viewBox="0 0 24 24" width="16" height="16"
+						fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+						aria-hidden="true">
+						<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+						<polyline points="15 3 21 3 21 9"></polyline>
+						<line x1="10" y1="14" x2="21" y2="3"></line>
+					</svg>
+				</a>
+			</div>
+		</div>
+		<div class="list">
+			<picture>
+				<source srcset="assets/images/08.webp" type="image/webp">
+				<img src="assets/images/08.png" alt="">
+			</picture>
+			<div class="project-card">
+				<h3 class="project-card__title">ConTech（ジャンル：現場管理）</h3>
+				<dl class="project-card__spec-list">
+					<div class="project-card__spec-group">
+						<dt class="project-card__spec-name">担当範囲</dt>
+						<dd class="project-card__spec-detail">
+							<span class="inline tip-ui">UIデザイン</span>
+						</dd>
+					</div>
+					<div class="project-card__spec-group">
+						<dt class="project-card__spec-name">制作期間</dt>
+						<dd class="project-card__spec-detail">15日間（2026年）</dd>
+					</div>
+					<div class="project-card__spec-group">
+						<dt class="project-card__spec-name">使用ツール</dt>
+						<dd class="project-card__spec-detail">Figma</dd>
+					</div>
+					<div class="project-card__spec-group">
+						<dt class="project-card__spec-name">ターゲット</dt>
+						<dd class="project-card__spec-detail">建設現場の現場監督（施工管理者）</dd>
+					</div>
+				</dl>
+				<div class="project-card__link-wrap">
+					<a href="https://www.figma.com/proto/ihdS1SWRQDTLmGgLR0Yovc/resson?node-id=655-2334&viewport=1013%2C305%2C0.78&t=AObaROZlf9zZmUkj-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=655%3A2334&show-proto-sidebar=1&page-id=206%3A26"
+						aria-label="作品詳細をプロトタイプで開く" target="_blank" rel="noopener noreferrer" class="project-card__link-button">
+						<span>Figma</span>
+						<svg class="project-card__link-icon" xmlns="http://w3.org" viewBox="0 0 24 24" width="16" height="16"
+							fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							aria-hidden="true">
+							<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+							<polyline points="15 3 21 3 21 9"></polyline>
+							<line x1="10" y1="14" x2="21" y2="3"></line>
+						</svg>
+					</a>
+					<button class="project-card__link-button ovarlay-button" id="showDialog">
+						<span>プレビュー</span>
+					</button>
+					<dialog class="dialog-position" id="modal">
+						<div class="dialog-style">
+							<dl>
+								<dt>詳細</dt>
+								<dd>⚫︎目的：建設業界の安全管理や工事の進捗確認などの日報</dd>
+								<dd>⚫︎利用者：協力会社職長から元請け企業へ提出</dd>
+								<dd>⚫︎色について:メインカラーには信頼や誠実さを表す青色を採用しました。青色はリラックス効果も併せ持つため、現場仕事に携わるユーザーが画面を見て操作する際のストレスを緩和する狙いがあります。</dd>
+								<dd><img src="assets/images/color.png" alt=""></dd>
+							</dl>
+							<dl>
+								<dt>画面設計</dt>
+								<dd>画面は協力会社の職長が日々の日報を記入する流れになります。見出し、決定ボタンなどは文字をやや大きく見せており、ボタンも操作しやすいように大きめに設定しました。細かな設定など排除し、シンプルな作りを心がけました。</dd>
+								<dd><video src="assets/aaa.mp4" autoplay muted loop playsinline controls class="modal-video"></video></dd>
+							</dl>
+							<span>※以降は随時追加更新いたします</span>
+							<button id="closeDialog">× </button>
+						</div>
+					</dialog>
 				</div>
 			</div>
-		</section>
-		<secttion class="et-slide" id="tab-02">
-			<div class="et-wrap">
-				<h2 class="header-02">FEATURE PAGE - 02</h2>
-				<div class="et-inner">
-					<a href="https://production-account.github.io/02/" target="_blank" class="et-anchor btn"
-						aria-label="別タブでサイトページを表示します">
-						<picture class="picture">
-							<source srcset="assets/images/02.webp">
-							<img src="assets/images/02.jpg" width="480" height="250" alt="XX年制作">
-							<figcaption>サイトページへ<span class="material-symbols-outlined">open_in_new</span></figcaption>
-						</picture>
-					</a>
-					<div class="site-detail">
-						<div class="tabs tabs-02">
-							<div class="tabs__list" role="tab" aria-label="タブメニュー">
-								<label id="tabs-all" class="tabs__item" for="tabs-all-input-02">
-									<input id="tabs-all-input-02" type="radio" name="tabs02" checked>
-									制作の担当範囲
-								</label>
-								<label id="tabs-direction" class="tabs__item" for="tabs-direction-input-02">
-									<input id="tabs-direction-input-02" type="radio" name="tabs02">
-									ディレクション
-								</label>
-								<label id="tabs-design" class="tabs__item" for="tabs-design-input-02">
-									<input id="tabs-design-input-02" type="radio" name="tabs02">
-									デザイン
-								</label>
-								<label id="tabs-coding" class="tabs__item" for="tabs-coding-input-02">
-									<input id="tabs-coding-input-02" type="radio" name="tabs02">
-									コーディング
-								</label>
-							</div>
-							<div class="tabs__content" id="tabs-all__content-02" role="tabpanel" aria-labelledby="tabs-all">
-								<div class="tabs-inner">
-									<table class="responsive-table stack-table">
-										<thead>
-											<tr>
-												<th>項目</th>
-												<th>担当内容 / 使用ツール</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td data-label="担当範囲">担当範囲</td>
-												<td data-label="コーダー/フロントエンジニア">コーダー/フロントエンジニア</td>
-											</tr>
-											<tr>
-												<td data-label="デザイン">デザイン</td>
-												<td data-label="画像レタッチ, サイトページの構成">画像レタッチ, サイトページの構成</td>
-											</tr>
-											<tr>
-												<td data-label="コーディング">コーディング</td>
-												<td data-label="HTML5, CSS3, JavaScript、jQuary">HTML5, CSS3, JavaScript、jQuary</td>
-											</tr>
-											<tr>
-												<td data-label="制作期間">制作期間</td>
-												<td data-label="7日間（企画・仕様設計2日間、制作約30時間）">7日間（企画・仕様設計2日間、制作約30時間）</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-							<div class="tabs__content" id="tabs-direction__content-02" role="tabpanel" aria-labelledby="tabs-direction">
-								<div class="tabs-inner">
-									<dl>
-										<dt>クライアントの目的 / 課題</dt>
-										<dd>
-											<span class="goal">目的</span>紙カタログをただWEBに載せるのではなく、WEBらしいカタログページを作成する<br>
-											<span class="task">課題</span>単にスクロールして見るだけではなく、WEB特有のインタラクションや情報を探せる体験が求められていると判断<br>
-										</dd>
-										<dt>目的・課題改善に意識した点</dt>
-										<dd>
-											カタログ的な網羅性を保ちつつ、スライドショーやオーバーレイ機能を実装し、アイテムの見やすさを意識しました。
-										</dd>
-									</dl>
-								</div>
-							</div>
-							<div class="tabs__content" id="tabs-design__content-02" role="tabpanel" aria-labelledby="tabs-design">
-								<div class="tabs-inner">
-									<dl>
-										<dt>ページデザインに至るまで</dt>
-										<dd>
-											・既存の紙カタログデザインをレスポンシブデザインへと再構築<br>
-											・「読むこと」から「体験する」に変換<br>
-											・紙カタログ特徴は、画像とテキストと紙の質感を通じて世界観の体験ができることをふまえ、紙にできない体験ができることを狙って作成しました
-										</dd>
-										<!-- <dd>
-											<span class="task">課題：</span>
-											商品数が多いため、どんな商品があったのか忘れてしまう<br>
-											<span class="results">実績：</span>
-											アイテムの組み合わせを提案できるように関連商品の枠を設置するワイヤーフレームを作成
-										</dd> -->
-									</dl>
-								</div>
-							</div>
-							<div class="tabs__content" id="tabs-coding__content-02" role="tabpanel" aria-labelledby="tabs-coding">
-								<div class="tabs-inner">
-									<dl>
-										<dt>制作担当範囲</dt>
-										<dd>15〜20全ページの制作を担当</dd>
-										<dt>ユーザー操作に対するインタラクション設計</dt>
-										<dd>
-											<span class="task">課題</span>『急な来客や近所への外出にも対応できる上品さを両立させたスタイル』高級感と親しみやすさを表現<br>
-											<span class="results">実績</span>ブランドイメージを損なわないように、ゆったりした心地よいフェードイン・アニメーションを実装
-										</dd>
-										<dt>レスポンシブデザインの設計</dt>
-										<dd>
-											<span class="task">課題</span>スマートフォン閲覧疲れによる離脱を防ぐ<br>
-											<span
-												class="results">実績</span>テキストが多い分画面が文字で埋め尽くされることを懸念。それに伴いスクロール疲れも想定されるため、アコーディオン機能を実装。ユーザーが求める情報にアクセスしやすい設計にしました。
-										</dd>
-										<dt>表示パフォーマンスについて</dt>
-										<dd>
-											<span class="task">課題</span>閲覧環境に負荷を与えないサイトにする<br>
-											<span class="results">実績</span>画像サイズの最適化、不要なプラグインの排除、jQueryライブラリを極力使わずJavaScriptで実装。また、
-											PageSpeed Insightsのスコア向上と表示速度の高速化
-										</dd>
-									</dl>
-								</div>
-							</div>
-						</div>
-						<!-- <dl>
-							<dt>制作の担当範囲と概要</dt>
-							<dd><span>担当範囲：</span>デザイン、全ページコーディング（マークアップ、動きの実装など）、レイアウトの調整、レスポンシブデザインの設計、インタラクション設計</dd>
-							<dd><span>制作期間：</span>コーディングに約7日間</dd>
-							<dd><span>使用ツール・言語：</span>Photoshop, HTML5, CSS3, JavaScript(jQuery) </dd>
-						</dl>
-						<dl>
-							<dt>制作の目的とターゲット</dt>
-							<dd><span>サイトの目的：</span>トレンドの周知、資料の請求</dd>
-							<dd><span>ターゲット層：</span>服飾に携わる人、マスコミ</dd>
-							<dd><span>デザインの意図：</span>ブランドのシーズンキャンペーンサイト</dd>
-						</dl> -->
+		</div>
+		<div class="list">
+			<picture>
+				<source srcset="assets/images/06.webp" type="image/webp">
+				<img src="assets/images/06.jpg" alt="">
+			</picture>
+			<div class="project-card">
+				<h3 class="project-card__title">WEBサイトリニューアル（ジャンル：専門学校サイト）</h3>
+				<dl class="project-card__spec-list">
+					<div class="project-card__spec-group">
+						<dt class="project-card__spec-name">担当範囲</dt>
+						<dd class="project-card__spec-detail">
+							<span class="inline tip-gd">グラフィックデザイン</span>
+							<span class="inline tip-ui">UIデザイン</span>
+							<span class="inline tip-co">コーディング</span>
+						</dd>
 					</div>
-				</div>
-			</div>
-		</secttion>
-		<secttion class="et-slide" id="tab-03">
-			<div class="et-wrap">
-				<h2 class="header-02">FEATURE PAGE - 03</h2>
-				<div class="et-inner">
-					<a href="https://okami-821.github.io/portfolio05/" target="_blank" class="et-anchor btn"
-						aria-label="別タブでサイトページを表示します">
-						<picture class="picture">
-							<source srcset="assets/images/03.webp">
-							<img src="assets/images/03.jpg" width="480" height="250" alt="XX年制作">
-							<figcaption>サイトページへ<span class="material-symbols-outlined">open_in_new</span></figcaption>
-						</picture>
-					</a>
-					<div class="site-detail">
-						<div class="tabs tabs-03">
-							<div class="tabs__list" role="tab" aria-label="タブメニュー">
-								<label id="tabs-all" class="tabs__item" for="tabs-all-input-03">
-									<input id="tabs-all-input-03" type="radio" name="tabs03" checked>
-									制作の担当範囲
-								</label>
-								<label id="tabs-direction" class="tabs__item" for="tabs-direction-input-03">
-									<input id="tabs-direction-input-03" type="radio" name="tabs03">
-									ディレクション
-								</label>
-								<label id="tabs-design" class="tabs__item" for="tabs-design-input-03">
-									<input id="tabs-design-input-03" type="radio" name="tabs03">
-									デザイン
-								</label>
-								<label id="tabs-coding" class="tabs__item" for="tabs-coding-input-03">
-									<input id="tabs-coding-input-03" type="radio" name="tabs03">
-									コーディング
-								</label>
-							</div>
-							<div class="tabs__content" id="tabs-all__content-03" role="tabpanel" aria-labelledby="tabs-all">
-								<div class="tabs-inner">
-									<table class="responsive-table stack-table">
-										<thead>
-											<tr>
-												<th>項目</th>
-												<th>担当内容 / 使用ツール</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td data-label="担当範囲">担当範囲</td>
-												<td data-label="コーダー/フロントエンジニア">コーダー/フロントエンジニア</td>
-											</tr>
-											<tr>
-												<td data-label="デザイン">デザイン</td>
-												<td data-label="画像レタッチ, サイトページの構成">画像レタッチ, サイトページの構成</td>
-											</tr>
-											<tr>
-												<td data-label="コーディング">コーディング</td>
-												<td data-label="HTML5, CSS3, JavaScript、jQuary">HTML5, CSS3, JavaScript、jQuary</td>
-											</tr>
-											<tr>
-												<td data-label="制作期間">制作期間</td>
-												<td data-label="2日間">2日間</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-							<div class="tabs__content" id="tabs-direction__content-03" role="tabpanel" aria-labelledby="tabs-direction">
-								<div class="tabs-inner">
-									<dl>
-										<dt>クライアントの目的 / 課題</dt>
-										<dd>
-											<span class="goal">目的</span>ー<br>
-											<span class="task">課題</span>ー<br>
-										</dd>
-										<dt>目的・課題改善に意識した点</dt>
-										<dd>ー</dd>
-									</dl>
-								</div>
-							</div>
-							<div class="tabs__content" id="tabs-design__content-03" role="tabpanel" aria-labelledby="tabs-design">
-								<div class="tabs-inner">
-									<dl>
-										<dt>ページデザインに至るまで</dt>
-										<dd>
-											・ー<br>
-										</dd>
-										<!-- <dd>
-											<span class="task">課題：</span>
-											商品数が多いため、どんな商品があったのか忘れてしまう<br>
-											<span class="results">実績：</span>
-											アイテムの組み合わせを提案できるように関連商品の枠を設置するワイヤーフレームを作成
-										</dd> -->
-									</dl>
-								</div>
-							</div>
-							<div class="tabs__content" id="tabs-coding__content-03" role="tabpanel" aria-labelledby="tabs-coding">
-								<div class="tabs-inner">
-									<dl>
-										<dt>制作担当範囲</dt>
-										<dd>LP制作</dd>
-										<dt>ユーザー操作に対するインタラクション設計</dt>
-										<dd>
-											<span class="task">課題</span>ー<br>
-											<span class="results">実績</span>ー
-										</dd>
-										<dt>レスポンシブデザインの設計</dt>
-										<dd>
-											<span class="task">課題</span>ー<br>
-											<span
-												class="results">実績</span>ー
-										</dd>
-										<dt>表示パフォーマンスについて</dt>
-										<dd>
-											<span class="task">課題</span>ー<br>
-											<span class="results">実績</span>ー
-										</dd>
-									</dl>
-								</div>
-							</div>
-						</div>
-						<!-- <dl>
-							<dt>制作の担当範囲と概要</dt>
-							<dd><span>担当範囲：</span>デザイン、全ページコーディング（マークアップ、動きの実装など）、レイアウトの調整、レスポンシブデザインの設計、インタラクション設計</dd>
-							<dd><span>制作期間：</span>コーディングに約7日間</dd>
-							<dd><span>使用ツール・言語：</span>Photoshop, HTML5, CSS3, JavaScript(jQuery) </dd>
-						</dl>
-						<dl>
-							<dt>制作の目的とターゲット</dt>
-							<dd><span>サイトの目的：</span>トレンドの周知、資料の請求</dd>
-							<dd><span>ターゲット層：</span>服飾に携わる人、マスコミ</dd>
-							<dd><span>デザインの意図：</span>ブランドのシーズンキャンペーンサイト</dd>
-						</dl> -->
+					<div class="project-card__spec-group">
+						<dt class="project-card__spec-name">制作期間</dt>
+						<dd class="project-card__spec-detail">-</dd>
 					</div>
-					<!-- <div class="site-detail">
-						<dl>
-							<dt>制作の担当範囲と概要</dt>
-							<dd><span>担当範囲：</span>デザイン、全ページコーディング（マークアップ、動きの実装など）、レイアウトの調整、レスポンシブデザインの設計、インタラクション設計</dd>
-							<dd><span>制作期間：</span>コーディングに約5日間</dd>
-							<dd><span>使用ツール・言語：</span>Photoshop, HTML5, CSS3, JavaScript(jQuery) </dd>
-						</dl>
-						<dl>
-							<dt>制作の目的とターゲット</dt>
-							<dd><span>サイトの目的：</span>トレンドの周知、資料の請求</dd>
-							<dd><span>ターゲット層：</span>服飾に携わる人、マスコミ</dd>
-							<dd><span>デザインの意図：</span>ブランドのシーズンキャンペーンサイト</dd>
-						</dl>
-					</div> -->
-				</div>
-			</div>
-		</secttion>
-		<secttion class="et-slide" id="tab-04">
-			<div class="et-wrap">
-				<h2 class="header-02">ORIGINAL SITE - 04</h2>
-				<div class="et-inner">
-					<a href="https://okami-821.github.io/03_work/" target="_blank" class="et-anchor btn"
-						aria-label="別タブでサイトページを表示します">
-						<picture class="picture">
-							<source srcset="assets/images/04.webp">
-							<img src="assets/images/04.jpg" width="480" height="250" alt="XX年制作">
-							<figcaption>サイトページへ<span class="material-symbols-outlined">open_in_new</span></figcaption>
-						</picture>
-					</a>
-					<div class="site-detail">
-						<div class="tabs tabs-04">
-							<div class="tabs__list" role="tab" aria-label="タブメニュー">
-								<label id="tabs-all" class="tabs__item" for="tabs-all-input-04">
-									<input id="tabs-all-input-04" type="radio" name="tabs04" checked>
-									制作の担当範囲
-								</label>
-								<label id="tabs-direction" class="tabs__item" for="tabs-direction-input-04">
-									<input id="tabs-direction-input-04" type="radio" name="tabs04">
-									ディレクション
-								</label>
-								<label id="tabs-design" class="tabs__item" for="tabs-design-input-04">
-									<input id="tabs-design-input-04" type="radio" name="tabs04">
-									デザイン
-								</label>
-								<label id="tabs-coding" class="tabs__item" for="tabs-coding-input-04">
-									<input id="tabs-coding-input-04" type="radio" name="tabs04">
-									コーディング
-								</label>
-							</div>
-							<div class="tabs__content" id="tabs-all__content-04" role="tabpanel" aria-labelledby="tabs-all">
-								<div class="tabs-inner">
-									<table class="responsive-table stack-table">
-										<thead>
-											<tr>
-												<th>項目</th>
-												<th>担当内容 / 使用ツール</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td data-label="担当範囲">担当範囲</td>
-												<td data-label="コーダー/フロントエンジニア">コーダー/フロントエンジニア</td>
-											</tr>
-											<tr>
-												<td data-label="デザイン">デザイン</td>
-												<td data-label="画像レタッチ, サイトページの構成">画像レタッチ, サイトページの構成</td>
-											</tr>
-											<tr>
-												<td data-label="コーディング">コーディング</td>
-												<td data-label="HTML5, CSS3, JavaScript、jQuary">HTML5, CSS3, JavaScript、jQuary</td>
-											</tr>
-											<tr>
-												<td data-label="制作期間">制作期間</td>
-												<td data-label="7日間（企画・仕様設計2日間、制作約30時間）">7日間（企画・仕様設計2日間、制作約30時間）</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-							<div class="tabs__content" id="tabs-direction__content-04" role="tabpanel" aria-labelledby="tabs-direction">
-								<div class="tabs-inner">
-									<dl>
-										<dt>クライアントの目的 / 課題</dt>
-										<dd>
-											<span class="goal">目的</span>紙カタログをただWEBに載せるのではなく、WEBらしいカタログページを作成する<br>
-											<span class="task">課題</span>単にスクロールして見るだけではなく、WEB特有のインタラクションや情報を探せる体験が求められていると判断<br>
-										</dd>
-										<dt>目的・課題改善に意識した点</dt>
-										<dd>
-											カタログ的な網羅性を保ちつつ、スライドショーやオーバーレイ機能を実装し、アイテムの見やすさを意識しました。
-										</dd>
-									</dl>
-								</div>
-							</div>
-							<div class="tabs__content" id="tabs-design__content-04" role="tabpanel" aria-labelledby="tabs-design">
-								<div class="tabs-inner">
-									<dl>
-										<dt>ページデザインに至るまで</dt>
-										<dd>
-											・既存の紙カタログデザインをレスポンシブデザインへと再構築<br>
-											・「読むこと」から「体験する」に変換<br>
-											・紙カタログ特徴は、画像とテキストと紙の質感を通じて世界観の体験ができることをふまえ、紙にできない体験ができることを狙って作成しました
-										</dd>
-										<!-- <dd>
-											<span class="task">課題：</span>
-											商品数が多いため、どんな商品があったのか忘れてしまう<br>
-											<span class="results">実績：</span>
-											アイテムの組み合わせを提案できるように関連商品の枠を設置するワイヤーフレームを作成
-										</dd> -->
-									</dl>
-								</div>
-							</div>
-							<div class="tabs__content" id="tabs-coding__content-04" role="tabpanel" aria-labelledby="tabs-coding">
-								<div class="tabs-inner">
-									<dl>
-										<dt>制作担当範囲</dt>
-										<dd>15〜20全ページの制作を担当</dd>
-										<dt>ユーザー操作に対するインタラクション設計</dt>
-										<dd>
-											<span class="task">課題</span>『急な来客や近所への外出にも対応できる上品さを両立させたスタイル』高級感と親しみやすさを表現<br>
-											<span class="results">実績</span>ブランドイメージを損なわないように、ゆったりした心地よいフェードイン・アニメーションを実装
-										</dd>
-										<dt>レスポンシブデザインの設計</dt>
-										<dd>
-											<span class="task">課題</span>スマートフォン閲覧疲れによる離脱を防ぐ<br>
-											<span
-												class="results">実績</span>テキストが多い分画面が文字で埋め尽くされることを懸念。それに伴いスクロール疲れも想定されるため、アコーディオン機能を実装。ユーザーが求める情報にアクセスしやすい設計にしました。
-										</dd>
-										<dt>表示パフォーマンスについて</dt>
-										<dd>
-											<span class="task">課題</span>閲覧環境に負荷を与えないサイトにする<br>
-											<span class="results">実績</span>画像サイズの最適化、不要なプラグインの排除、jQueryライブラリを極力使わずJavaScriptで実装。また、
-											PageSpeed Insightsのスコア向上と表示速度の高速化
-										</dd>
-									</dl>
-								</div>
-							</div>
-						</div>
-						<!-- <dl>
-							<dt>制作の担当範囲と概要</dt>
-							<dd><span>担当範囲：</span>デザイン、全ページコーディング（マークアップ、動きの実装など）、レイアウトの調整、レスポンシブデザインの設計、インタラクション設計</dd>
-							<dd><span>制作期間：</span>コーディングに約7日間</dd>
-							<dd><span>使用ツール・言語：</span>Photoshop, HTML5, CSS3, JavaScript(jQuery) </dd>
-						</dl>
-						<dl>
-							<dt>制作の目的とターゲット</dt>
-							<dd><span>サイトの目的：</span>トレンドの周知、資料の請求</dd>
-							<dd><span>ターゲット層：</span>服飾に携わる人、マスコミ</dd>
-							<dd><span>デザインの意図：</span>ブランドのシーズンキャンペーンサイト</dd>
-						</dl> -->
+					<div class="project-card__spec-group">
+						<dt class="project-card__spec-name">使用ツール</dt>
+						<dd class="project-card__spec-detail">Figma VSCode</dd>
 					</div>
-					<!-- <div class="site-detail">
-						<dl>
-							<dt>制作の担当範囲と概要</dt>
-							<dd><span>担当範囲：</span>全ページコーディング（マークアップ、動きの実装など）、レイアウトの調整、レスポンシブデザインの設計、インタラクション設計</dd>
-							<dd><span>制作期間：</span>コーディングに約2日間</dd>
-							<dd><span>使用ツール・言語：</span>Photoshop, HTML5, CSS3, JavaScript(jQuery) </dd>
-						</dl>
-						<dl>
-							<dt>制作の目的とターゲット</dt>
-							<dd><span>サイトの目的：</span>テストサイト制作、レスポンシブにシームレスに対応したデザインを目的とした制作</dd>
-							<dd><span>ターゲット層：</span>ー</dd>
-							<dd><span>デザインの意図：</span>レスポンシブにシームレスに対応したデザインを目的とした制作（今後改良予定）</dd>
-						</dl>
-					</div> -->
-				</div>
-			</div>
-		</secttion>
-		<secttion class="et-slide" id="tab-05">
-			<div class="et-wrap">
-				<h2 class="header-02">FINANCIAL SITE - 05</h2>
-				<div class="et-inner">
-					<a href="https://www.fanbridge-cashless.com/" target="_blank" class="et-anchor btn"
-						aria-label="別タブでサイトページを表示します">
-						<picture class="picture">
-							<source srcset="assets/images/05.webp">
-							<img src="assets/images/05.jpg" width="480" height="250" alt="XX年制作">
-							<figcaption>サイトページへ<span class="material-symbols-outlined">open_in_new</span></figcaption>
-						</picture>
-					</a>
-					<div class="site-detail">
-						<div class="tabs tabs-05">
-							<div class="tabs__list" role="tab" aria-label="タブメニュー">
-								<label id="tabs-all" class="tabs__item" for="tabs-all-input-05">
-									<input id="tabs-all-input-05" type="radio" name="tabs05" checked>
-									制作の担当範囲
-								</label>
-								<label id="tabs-direction" class="tabs__item" for="tabs-direction-input-05">
-									<input id="tabs-direction-input-05" type="radio" name="tabs05">
-									ディレクション
-								</label>
-								<label id="tabs-design" class="tabs__item" for="tabs-design-input-05">
-									<input id="tabs-design-input-05" type="radio" name="tabs05">
-									デザイン
-								</label>
-								<label id="tabs-coding" class="tabs__item" for="tabs-coding-input-05">
-									<input id="tabs-coding-input-05" type="radio" name="tabs05">
-									コーディング
-								</label>
-							</div>
-							<div class="tabs__content" id="tabs-all__content-05" role="tabpanel" aria-labelledby="tabs-all">
-								<div class="tabs-inner">
-									<table class="responsive-table stack-table">
-										<thead>
-											<tr>
-												<th>項目</th>
-												<th>担当内容 / 使用ツール</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td data-label="担当範囲">担当範囲</td>
-												<td data-label="コーダー/フロントエンジニア">コーダー/フロントエンジニア</td>
-											</tr>
-											<tr>
-												<td data-label="デザイン">デザイン</td>
-												<td data-label="画像レタッチ, サイトページの構成">画像レタッチ, サイトページの構成</td>
-											</tr>
-											<tr>
-												<td data-label="コーディング">コーディング</td>
-												<td data-label="HTML5, CSS3, JavaScript、jQuary">HTML5, CSS3, JavaScript、jQuary</td>
-											</tr>
-											<tr>
-												<td data-label="制作期間">制作期間</td>
-												<td data-label="7日間（企画・仕様設計2日間、制作約30時間）">7日間（企画・仕様設計2日間、制作約30時間）</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-							<div class="tabs__content" id="tabs-direction__content-05" role="tabpanel" aria-labelledby="tabs-direction">
-								<div class="tabs-inner">
-									<dl>
-										<dt>クライアントの目的 / 課題</dt>
-										<dd>
-											<span class="goal">目的</span>ー<br>
-											<span class="task">課題</span>ー<br>
-										</dd>
-										<dt>目的・課題改善に意識した点</dt>
-										<dd>
-											ー
-										</dd>
-									</dl>
-								</div>
-							</div>
-							<div class="tabs__content" id="tabs-design__content-05" role="tabpanel" aria-labelledby="tabs-design">
-								<div class="tabs-inner">
-									<dl>
-										<dt>ページデザインに至るまで</dt>
-										<dd>
-											・ー<br>
-										</dd>
-										<!-- <dd>
-											<span class="task">課題：</span>
-											商品数が多いため、どんな商品があったのか忘れてしまう<br>
-											<span class="results">実績：</span>
-											アイテムの組み合わせを提案できるように関連商品の枠を設置するワイヤーフレームを作成
-										</dd> -->
-									</dl>
-								</div>
-							</div>
-							<div class="tabs__content" id="tabs-coding__content-05" role="tabpanel" aria-labelledby="tabs-coding">
-								<div class="tabs-inner">
-									<dl>
-										<dt>制作担当範囲</dt>
-										<dd>15〜20全ページの制作を担当</dd>
-										<dt>ユーザー操作に対するインタラクション設計</dt>
-										<dd>
-											<span class="task">課題</span>ー<br>
-											<span class="results">実績</span>ー
-										</dd>
-										<dt>レスポンシブデザインの設計</dt>
-										<dd>
-											<span class="task">課題</span>ー<br>
-											<span
-												class="results">実績</span>ー
-										</dd>
-										<dt>表示パフォーマンスについて</dt>
-										<dd>
-											<span class="task">課題</span>ー<br>
-											<span class="results">実績</span>ー
-										</dd>
-									</dl>
-								</div>
-							</div>
-						</div>
-						<!-- <dl>
-							<dt>制作の担当範囲と概要</dt>
-							<dd><span>担当範囲：</span>デザイン、全ページコーディング（マークアップ、動きの実装など）、レイアウトの調整、レスポンシブデザインの設計、インタラクション設計</dd>
-							<dd><span>制作期間：</span>コーディングに約7日間</dd>
-							<dd><span>使用ツール・言語：</span>Photoshop, HTML5, CSS3, JavaScript(jQuery) </dd>
-						</dl>
-						<dl>
-							<dt>制作の目的とターゲット</dt>
-							<dd><span>サイトの目的：</span>トレンドの周知、資料の請求</dd>
-							<dd><span>ターゲット層：</span>服飾に携わる人、マスコミ</dd>
-							<dd><span>デザインの意図：</span>ブランドのシーズンキャンペーンサイト</dd>
-						</dl> -->
+					<div class="project-card__spec-group">
+						<dt class="project-card__spec-name">ターゲット</dt>
+						<dd class="project-card__spec-detail">入学学生、保護者、高等学校の進路指導教諭、社会人、大学中退者</dd>
 					</div>
-					<!-- <div class="site-detail">
-						<dl>
-							<dt>制作の担当範囲と概要</dt>
-							<dd><span>担当範囲：</span>デザイン、コーディング（マークアップ、動きの実装など）、レイアウトの調整、レスポンシブデザインの設計、インタラクション設計</dd>
-							<dd><span>制作期間：</span>コーディングに約7日間</dd>
-							<dd><span>使用ツール・言語：</span>Photoshop, HTML5, CSS3, JavaScript(jQuery) </dd>
-						</dl>
-						<dl>
-							<dt>制作の目的とターゲット</dt>
-							<dd><span>サイトの目的：</span>新規サービスに伴う周知</dd>
-							<dd><span>ターゲット層：</span>サッカーに興味がある人、サッカー観戦によく訪れる人</dd>
-							<dd><span>デザインの意図：</span>イベントにて煩わしさから解放されて簡単に決済ができることを求める人</dd>
-						</dl>
-					</div> -->
-				</div>
+				</dl>
+				<a href="https://www.sendai-eco.ac.jp/education/training.html" aria-label="作品詳細を新しいウィンドウで開く" target="_blank"
+					rel="noopener noreferrer" class="project-card__link-button">
+					<span>Webサイトへ</span>
+					<svg class="project-card__link-icon" xmlns="http://w3.org" viewBox="0 0 24 24" width="16" height="16"
+						fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+						aria-hidden="true">
+						<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+						<polyline points="15 3 21 3 21 9"></polyline>
+						<line x1="10" y1="14" x2="21" y2="3"></line>
+					</svg>
+				</a>
 			</div>
-		</secttion>
-		<secttion class="et-slide" id="tab-06">
-			<div class="et-wrap">
-				<h2 class="header-02">SCHOOL SITE - 06</h2>
-				<div class="et-inner">
-					<a href="https://www.sendai-eco.ac.jp/education/training.html" target="_blank" class="et-anchor btn"
-						aria-label="別タブでサイトページを表示します">
-						<picture class="picture">
-							<source srcset="assets/images/06.webp">
-							<img src="assets/images/06.jpg" width="480" height="250" alt="XX年制作">
-							<figcaption>サイトページへ<span class="material-symbols-outlined">open_in_new</span></figcaption>
-						</picture>
-					</a>
-					<div class="site-detail">
-						<div class="tabs tabs-06">
-							<div class="tabs__list" role="tab" aria-label="タブメニュー">
-								<label id="tabs-all" class="tabs__item" for="tabs-all-input-06">
-									<input id="tabs-all-input-06" type="radio" name="tabs06" checked>
-									制作の担当範囲
-								</label>
-								<label id="tabs-direction" class="tabs__item" for="tabs-direction-input-06">
-									<input id="tabs-direction-input-06" type="radio" name="tabs06">
-									ディレクション
-								</label>
-								<label id="tabs-design" class="tabs__item" for="tabs-design-input-06">
-									<input id="tabs-design-input-06" type="radio" name="tabs06">
-									デザイン
-								</label>
-								<label id="tabs-coding" class="tabs__item" for="tabs-coding-input-06">
-									<input id="tabs-coding-input-06" type="radio" name="tabs06">
-									コーディング
-								</label>
-							</div>
-							<div class="tabs__content" id="tabs-all__content-06" role="tabpanel" aria-labelledby="tabs-all">
-								<div class="tabs-inner">
-									<table class="responsive-table stack-table">
-										<thead>
-											<tr>
-												<th>項目</th>
-												<th>担当内容 / 使用ツール</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td data-label="担当範囲">担当範囲</td>
-												<td data-label="コーダー/フロントエンジニア">コーダー/フロントエンジニア</td>
-											</tr>
-											<tr>
-												<td data-label="デザイン">デザイン</td>
-												<td data-label="画像レタッチ, サイトページの構成">画像レタッチ, サイトページの構成</td>
-											</tr>
-											<tr>
-												<td data-label="コーディング">コーディング</td>
-												<td data-label="HTML5, CSS3, JavaScript、jQuary">HTML5, CSS3, JavaScript、jQuary</td>
-											</tr>
-											<tr>
-												<td data-label="制作期間">制作期間</td>
-												<td data-label="7日間（企画・仕様設計2日間、制作約30時間）">7日間（企画・仕様設計2日間、制作約30時間）</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-							<div class="tabs__content" id="tabs-direction__content-06" role="tabpanel" aria-labelledby="tabs-direction">
-								<div class="tabs-inner">
-									<dl>
-										<dt>クライアントの目的 / 課題</dt>
-										<dd>
-											<span class="goal">目的</span>ー<br>
-											<span class="task">課題</span>ー<br>
-										</dd>
-										<dt>目的・課題改善に意識した点</dt>
-										<dd>
-											ー
-										</dd>
-									</dl>
-								</div>
-							</div>
-							<div class="tabs__content" id="tabs-design__content-06" role="tabpanel" aria-labelledby="tabs-design">
-								<div class="tabs-inner">
-									<dl>
-										<dt>ページデザインに至るまで</dt>
-										<dd>
-											・ー<br>
-										</dd>
-										<!-- <dd>
-											<span class="task">課題：</span>
-											商品数が多いため、どんな商品があったのか忘れてしまう<br>
-											<span class="results">実績：</span>
-											アイテムの組み合わせを提案できるように関連商品の枠を設置するワイヤーフレームを作成
-										</dd> -->
-									</dl>
-								</div>
-							</div>
-							<div class="tabs__content" id="tabs-coding__content-06" role="tabpanel" aria-labelledby="tabs-coding">
-								<div class="tabs-inner">
-									<dl>
-										<dt>制作担当範囲</dt>
-										<dd></dd>
-										<dt></dt>
-										<dd>
-											<span class="task">課題</span><br>
-											<span class="results">実績</span>
-										</dd>
-										<dt>レスポンシブデザインの設計</dt>
-										<dd>
-											<span class="task">課題</span><br>
-											<span
-												class="results">実績</span>
-										</dd>
-										<dt>表示パフォーマンスについて</dt>
-										<dd>
-											<span class="task">課題</span><br>
-											<span class="results">実績</span>
-										</dd>
-									</dl>
-								</div>
-							</div>
-						</div>
-						<!-- <dl>
-							<dt>制作の担当範囲と概要</dt>
-							<dd><span>担当範囲：</span>デザイン、全ページコーディング（マークアップ、動きの実装など）、レイアウトの調整、レスポンシブデザインの設計、インタラクション設計</dd>
-							<dd><span>制作期間：</span>コーディングに約7日間</dd>
-							<dd><span>使用ツール・言語：</span>Photoshop, HTML5, CSS3, JavaScript(jQuery) </dd>
-						</dl>
-						<dl>
-							<dt>制作の目的とターゲット</dt>
-							<dd><span>サイトの目的：</span>トレンドの周知、資料の請求</dd>
-							<dd><span>ターゲット層：</span>服飾に携わる人、マスコミ</dd>
-							<dd><span>デザインの意図：</span>ブランドのシーズンキャンペーンサイト</dd>
-						</dl> -->
+		</div>
+
+		<div class="list">
+			<picture>
+				<source srcset="assets/images/05.webp" type="image/webp">
+				<img src="assets/images/05.jpg" alt="">
+			</picture>
+			<div class="project-card">
+				<h3 class="project-card__title">新規事業LPサイト（ジャンル：Fintech）</h3>
+				<dl class="project-card__spec-list">
+					<div class="project-card__spec-group">
+						<dt class="project-card__spec-name">担当範囲</dt>
+						<dd class="project-card__spec-detail">
+							<span class="inline tip-gd">グラフィックデザイン</span>
+							<span class="inline tip-ui">UIデザイン</span>
+							<span class="inline tip-co">コーディング</span>
+						</dd>
 					</div>
-					<!-- <div class="site-detail">
-						<dl>
-							<dt>制作の担当範囲と概要</dt>
-							<dd><span>担当範囲：</span>ページコーディング（マークアップ、動きの実装など）、レイアウトの調整、レスポンシブデザインの設計、インタラクション設計、デザイン</dd>
-							<dd><span>制作期間：</span>1Pにつきコーディングに約2日間</dd>
-							<dd><span>使用ツール・言語：</span>Figma, HTML, CSS3, JavaScript</dd>
-						</dl>
-						<dl>
-							<dt>制作の目的とターゲット</dt>
-							<dd><span>サイトの目的：</span>動物に興味がある、動物に関する知識を高めたい、将来動物の生態に関わる仕事に就きたい</dd>
-							<dd><span>ターゲット層：</span>高校卒業を控えた学生、進路を考えている学生など</dd>
-							<dd><span>デザインの意図：</span>とっつきやすく（エネルギーが軽くて明るいイメージ）、知りたい情報、知識を得られる（自分から取得する情報では得られない知識など）</dd>
-							<dd>
-								<span>他に担当したページのご紹介</span>
-								<a href="https://www.sendai-eco.ac.jp/school/faq.html" target="_blank"
-									style="text-decoration: underline;">よくある質問</a>
-								<a href="https://www.sendai-eco.ac.jp/school/equipment.html" target="_blank"
-									style="text-decoration: underline;">校舎・施設紹介</a>
-								<a href="https://www.sendai-eco.ac.jp/school/zoo.html" target="_blank"
-									style="text-decoration: underline;">仙台ECOの動物たち</a>
-								<a href="https://www.sendai-eco.ac.jp/education/original-training.html" target="_blank"
-									style="text-decoration: underline;">仙台ECO独自の実習授業</a>
-								<a href="https://www.sendai-eco.ac.jp/education/four-years.html" target="_blank"
-									style="text-decoration: underline;">4年間で「好き」を学ぶ！</a>
-								<a href="https://www.sendai-eco.ac.jp/education/project.html" target="_blank"
-									style="text-decoration: underline;">企業プロジェクト</a>
-								<a href="https://www.sendai-eco.ac.jp/course/" target="_blank"
-									style="text-decoration: underline;">学科・専攻紹介</a>
-								<a href="https://www.sendai-eco.ac.jp/career/interview.html" target="_blank"
-									style="text-decoration: underline;">卒業生インタビュー</a>
-							</dd>
-						</dl>
-					</div> -->
-				</div>
-			</div>
-		</secttion>
-		<secttion class="et-slide" id="tab-07">
-			<div class="et-wrap">
-				<h2 class="header-02">SHOP SITE - 07</h2>
-				<div class="et-inner">
-					<a href="https://www.tabinekokagu.com/" target="_blank" class="et-anchor btn" aria-label="別タブでサイトページを表示します">
-						<picture class="picture">
-							<source srcset="assets/images/07.webp">
-							<img src="assets/images/07.jpg" width="480" height="250" alt="XX年制作">
-							<figcaption>サイトページへ<span class="material-symbols-outlined">open_in_new</span></figcaption>
-						</picture>
-					</a>
-					<div class="site-detail">
-						<div class="tabs tabs-07">
-							<div class="tabs__list" role="tab" aria-label="タブメニュー">
-								<label id="tabs-all" class="tabs__item" for="tabs-all-input-07">
-									<input id="tabs-all-input-07" type="radio" name="tabs07" checked>
-									制作の担当範囲
-								</label>
-								<label id="tabs-direction" class="tabs__item" for="tabs-direction-input-07">
-									<input id="tabs-direction-input-07" type="radio" name="tabs07">
-									ディレクション
-								</label>
-								<label id="tabs-design" class="tabs__item" for="tabs-design-input-07">
-									<input id="tabs-design-input-07" type="radio" name="tabs07">
-									デザイン
-								</label>
-								<label id="tabs-coding" class="tabs__item" for="tabs-coding-input-07">
-									<input id="tabs-coding-input-07" type="radio" name="tabs07">
-									コーディング
-								</label>
-							</div>
-							<div class="tabs__content" id="tabs-all__content-07" role="tabpanel" aria-labelledby="tabs-all">
-								<div class="tabs-inner">
-									<table class="responsive-table stack-table">
-										<thead>
-											<tr>
-												<th>項目</th>
-												<th>担当内容 / 使用ツール</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td data-label="担当範囲">担当範囲</td>
-												<td data-label="コーダー/フロントエンジニア">コーダー/フロントエンジニア</td>
-											</tr>
-											<tr>
-												<td data-label="デザイン">デザイン</td>
-												<td data-label="画像レタッチ, サイトページの構成">画像レタッチ, サイトページの構成</td>
-											</tr>
-											<tr>
-												<td data-label="コーディング">コーディング</td>
-												<td data-label="HTML5, CSS3, JavaScript、jQuary">HTML5, CSS3, JavaScript、jQuary</td>
-											</tr>
-											<tr>
-												<td data-label="制作期間">制作期間</td>
-												<td data-label="7日間（企画・仕様設計2日間、制作約30時間）">7日間（企画・仕様設計2日間、制作約30時間）</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-							<div class="tabs__content" id="tabs-direction__content-07" role="tabpanel" aria-labelledby="tabs-direction">
-								<div class="tabs-inner">
-									<dl>
-										<dt>クライアントの目的 / 課題</dt>
-										<dd>
-											<span class="goal">目的</span>ー<br>
-											<span class="task">課題</span>ー<br>
-										</dd>
-										<dt>目的・課題改善に意識した点</dt>
-										<dd>
-											ー
-										</dd>
-									</dl>
-								</div>
-							</div>
-							<div class="tabs__content" id="tabs-design__content-07" role="tabpanel" aria-labelledby="tabs-design">
-								<div class="tabs-inner">
-									<dl>
-										<dt>ページデザインに至るまで</dt>
-										<dd>
-											・ー<br>
-										</dd>
-										<!-- <dd>
-											<span class="task">課題：</span>
-											商品数が多いため、どんな商品があったのか忘れてしまう<br>
-											<span class="results">実績：</span>
-											アイテムの組み合わせを提案できるように関連商品の枠を設置するワイヤーフレームを作成
-										</dd> -->
-									</dl>
-								</div>
-							</div>
-							<div class="tabs__content" id="tabs-coding__content-07" role="tabpanel" aria-labelledby="tabs-coding">
-								<div class="tabs-inner">
-									<dl>
-										<dt>制作担当範囲</dt>
-										<dd>全ページ制作</dd>
-										<dt>ユーザー操作に対するインタラクション設計</dt>
-										<dd>
-											<span class="task">課題</span>ー<br>
-											<span class="results">実績</span>ー
-										</dd>
-										<dt>レスポンシブデザインの設計</dt>
-										<dd>
-											<span class="task">課題</span>ー<br>
-											<span
-												class="results">実績</span>ー
-										</dd>
-										<dt>表示パフォーマンスについて</dt>
-										<dd>
-											<span class="task">課題</span>ー<br>
-											<span class="results">実績</span>ー
-										</dd>
-									</dl>
-								</div>
-							</div>
-						</div>
-						<!-- <dl>
-							<dt>制作の担当範囲と概要</dt>
-							<dd><span>担当範囲：</span>デザイン、全ページコーディング（マークアップ、動きの実装など）、レイアウトの調整、レスポンシブデザインの設計、インタラクション設計</dd>
-							<dd><span>制作期間：</span>コーディングに約7日間</dd>
-							<dd><span>使用ツール・言語：</span>Photoshop, HTML5, CSS3, JavaScript(jQuery) </dd>
-						</dl>
-						<dl>
-							<dt>制作の目的とターゲット</dt>
-							<dd><span>サイトの目的：</span>トレンドの周知、資料の請求</dd>
-							<dd><span>ターゲット層：</span>服飾に携わる人、マスコミ</dd>
-							<dd><span>デザインの意図：</span>ブランドのシーズンキャンペーンサイト</dd>
-						</dl> -->
+					<div class="project-card__spec-group">
+						<dt class="project-card__spec-name">制作期間</dt>
+						<dd class="project-card__spec-detail">7日間</dd>
 					</div>
-					<!-- <div class="site-detail">
-						<dl>
-							<dt>制作の担当範囲と概要</dt>
-							<dd><span>担当範囲：</span>デザイン提案、全ページコーディング（マークアップ、動きの実装など）、レイアウトの調整、レスポンシブデザインの設計、インタラクション設計</dd>
-							<dd><span>制作期間：</span>デザインに約1ヶ月、コーディングに約20日間</dd>
-							<dd><span>使用ツール・言語：</span>HTML, CSS, JavaScript </dd>
-						</dl>
-						<dl>
-							<dt>制作の目的とターゲット</dt>
-							<dd><span>サイトの目的：</span>知人のビジネス立ち上げに伴いサイトを制作</dd>
-							<dd><span>ターゲット層：</span>一生物として家具を所有したい人、理想とする日常があってそれを実現するツールを求めている人</dd>
-							<dd><span>デザインの意図：</span>使い捨てではなく持ち続ける喜び、オーナーになるという自覚をシェアするような意図</dd>
-						</dl>
-					</div> -->
-				</div>
+					<div class="project-card__spec-group">
+						<dt class="project-card__spec-name">使用ツール</dt>
+						<dd class="project-card__spec-detail">Figma VSCode</dd>
+					</div>
+					<div class="project-card__spec-group">
+						<dt class="project-card__spec-name">ターゲット</dt>
+						<dd class="project-card__spec-detail">スマホ操作が苦手な層、サポーター、観戦客</dd>
+					</div>
+				</dl>
+				<a href="https://www.fanbridge-cashless.com/" aria-label="作品詳細を新しいウィンドウで開く" target="_blank"
+					rel="noopener noreferrer" class="project-card__link-button">
+					<span>Webサイトへ</span>
+					<svg class="project-card__link-icon" xmlns="http://w3.org" viewBox="0 0 24 24" width="16" height="16"
+						fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+						aria-hidden="true">
+						<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+						<polyline points="15 3 21 3 21 9"></polyline>
+						<line x1="10" y1="14" x2="21" y2="3"></line>
+					</svg>
+				</a>
 			</div>
-		</secttion>
-	</main>
-	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-		crossorigin="anonymous"></script>
-	<script src="./assets/js/main.js"></script>
+		</div>
+
+		<div class="list">
+			<picture>
+				<source srcset="assets/images/07.webp" type="image/webp">
+				<img src="assets/images/07.jpg" alt="">
+			</picture>
+			<div class="project-card">
+				<h3 class="project-card__title">新規事業サイト（ジャンル：家具マッチングサイト）</h3>
+				<dl class="project-card__spec-list">
+					<div class="project-card__spec-group">
+						<dt class="project-card__spec-name">担当範囲</dt>
+						<dd class="project-card__spec-detail">
+							<span class="inline tip-gd">グラフィックデザイン</span>
+							<span class="inline tip-ui">UIデザイン</span>
+							<span class="inline tip-co">コーディング</span>
+						</dd>
+					</div>
+					<div class="project-card__spec-group">
+						<dt class="project-card__spec-name">制作期間</dt>
+						<dd class="project-card__spec-detail">25日間</dd>
+					</div>
+					<div class="project-card__spec-group">
+						<dt class="project-card__spec-name">使用ツール</dt>
+						<dd class="project-card__spec-detail">PhotShop VSCode</dd>
+					</div>
+					<div class="project-card__spec-group">
+						<dt class="project-card__spec-name">ターゲット</dt>
+						<dd class="project-card__spec-detail">オーダー家具に興味がある20代以降の層</dd>
+					</div>
+				</dl>
+				<a href="https://www.tabinekokagu.com/" aria-label="作品詳細を新しいウィンドウで開く" target="_blank" rel="noopener noreferrer"
+					class="project-card__link-button">
+					<span>Webサイトへ</span>
+					<svg class="project-card__link-icon" xmlns="http://w3.org" viewBox="0 0 24 24" width="16" height="16"
+						fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+						aria-hidden="true">
+						<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+						<polyline points="15 3 21 3 21 9"></polyline>
+						<line x1="10" y1="14" x2="21" y2="3"></line>
+					</svg>
+				</a>
+			</div>
+		</div>
+
+
+		<div class="list">
+			<picture>
+				<source srcset="assets/images/02.webp" type="image/webp">
+				<img src="assets/images/02.jpg" alt="">
+			</picture>
+			<div class="project-card">
+				<h3 class="project-card__title">企画LPサイト（ジャンル：アパレル）</h3>
+				<dl class="project-card__spec-list">
+					<div class="project-card__spec-group">
+						<dt class="project-card__spec-name">担当範囲</dt>
+						<dd class="project-card__spec-detail">
+							<span class="inline tip-gd">グラフィックデザイン</span>
+							<span class="inline tip-ui">UIデザイン</span>
+							<span class="inline tip-co">コーディング</span>
+						</dd>
+					</div>
+					<div class="project-card__spec-group">
+						<dt class="project-card__spec-name">制作期間</dt>
+						<dd class="project-card__spec-detail">25日間</dd>
+					</div>
+					<div class="project-card__spec-group">
+						<dt class="project-card__spec-name">使用ツール</dt>
+						<dd class="project-card__spec-detail">PhotShop VSCode</dd>
+					</div>
+					<div class="project-card__spec-group">
+						<dt class="project-card__spec-name">ターゲット</dt>
+						<dd class="project-card__spec-detail">オーダー家具に興味がある20代以降の層</dd>
+					</div>
+				</dl>
+				<a href="https://production-account.github.io/03/" aria-label="作品詳細を新しいウィンドウで開く" target="_blank" rel="noopener noreferrer"
+					class="project-card__link-button">
+					<span>Webサイトへ</span>
+					<svg class="project-card__link-icon" xmlns="http://w3.org" viewBox="0 0 24 24" width="16" height="16"
+						fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+						aria-hidden="true">
+						<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+						<polyline points="15 3 21 3 21 9"></polyline>
+						<line x1="10" y1="14" x2="21" y2="3"></line>
+					</svg>
+				</a>
+			</div>
+		</div>
+
+		<footer></footer>
+
+		<script>
+			const dialog = document.querySelector("dialog");
+
+			const showButton = document.querySelector("#showDialog");
+			showButton.addEventListener("click", () => {
+				dialog.showModal();
+			});
+
+			const closeButton = document.querySelector("#closeDialog");
+			closeButton.addEventListener("click", () => {
+				dialog.close();
+			});
+
+			const modal = document.getElementById('modal');
+			modal.addEventListener('click', (e) => {
+				const rect = modal.getBoundingClientRect();
+
+				if (
+					e.clientX < rect.left ||
+					e.clientX > rect.right ||
+					e.clientY < rect.top ||
+					e.clientY > rect.bottom
+				) {
+					// 外側であればモーダルを閉じる
+					modal.close();
+				}
+			});
+		</script>
+
+
+
+
+
 </body>
 
 </html>
