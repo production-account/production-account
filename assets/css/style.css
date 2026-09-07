@@ -1,23 +1,8 @@
 @charset "utf-8";
 
 :root {
-  --white: #FFF;
-  --black: #000;
-  --main-color: #eee;
-  --text-color: #333;
-
-  --font-family: "Century Gothic", 'Lato', sans-serif;
-  --normal-font: 400;
-  --bold-font: 700;
-
-  --bottom-margin: 0.5rem;
-  --line-height: 1.7em;
-
-  --transition: 0.3s;
-
-  --margin-block: 100px;
-
-  --outline: 2px solid #333;
+  --main-color: hsl(0 0% 10%);
+  --font-family-title: "Bebas Neue", sans-serif;
 }
 
 html {
@@ -37,6 +22,7 @@ html {
 
 body {
   min-height: 100%;
+  background-color: var(--main-color);
   font-family: var(--font-family);
   font-weight: 400;
   font-style: normal;
@@ -63,155 +49,110 @@ img {
   height: auto;
   object-fit: cover;
   vertical-align: bottom;
-  border: 1px solid #eee;
 }
 
-.et-hero-tabs,
-.et-slide {
+picture {
+  display: inline-block;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: clamp(3.75rem, 2.841rem + 4.55vw, 6.25rem);
+  font-family: var(--font-family-title);
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 20px;
+  padding: 100px 0;
+}
+
+/* main */
+main {
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* height: 100vh; */
-  position: relative;
-  background-color: var(--main-color);
-  padding: 0 2em;
+  gap: 160px;
+  /* display: grid; */
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+  /* gap: 20px; */
+  margin: auto;
+  /* padding: 20px; */
 }
 
-.et-hero-tabs-container {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  bottom: 0;
+.list {
   width: 100%;
-  height: 70px;
-  box-shadow: 0 0 20px rgb(0 0 0 / 0.2);
-  background-color: var(--white);
-  z-index: 10;
-}
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
 
-.top {
-  position: fixed;
-  top: 0;
-}
+  picture {
 
-.et-hero-tab {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-  color: var(--black);
-  letter-spacing: 0.1rem;
-  transition: all 0.5s ease;
-  font-size: 0.8rem;
-
-  &:hover {
-    background-color: var(--main-color);
-    transition: all 0.5s ease;
-  }
-}
-
-.et-hero-tab-slider {
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  height: 6px;
-  background-color: red;
-  transition: all 0.5s ease;
-}
-
-.et-anchor {
-  display: inline-block;
-  /* width: min(100vw, 1000px); */
-  border: 0;
-  /* padding: 0.1em; */
-  background: none;
-  /* margin: 2rem; */
-}
-
-.header-01 {
-  font-size: clamp(2rem, 4vw, 3rem);
-  margin: 0;
-  letter-spacing: 0.4rem;
-}
-
-.header-02 {
-  width: 100%;
-  font-size: clamp(1.25rem, 1.102rem + 0.74vw, 1.75rem);
-  text-align: start;
-  margin-bottom: 1rem;
-}
-
-.header-03 {
-  font-size: clamp(0.8rem, 0.4rem + 0.8vw, 1rem);
-  letter-spacing: 0.3rem;
-}
-
-.et-main {
-  .et-slide {
-    padding: 5rem 5rem 1rem 5rem;
-
-    .et-wrap {
-      /* height: 80%; */
-      max-width: 1000px;
-      padding: 2rem;
-      background-color: #FFF;
-
-      .et-inner {
-        /* display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2%; */
-
-        .site-detail {
-          display: flex;
-          flex-direction: column;
-          gap: 1rem;
-          margin-top: 1rem;
-
-          dl {
-            width: 90%;
-            margin: 2rem auto;
-
-            dt {
-              text-align: start;
-              font-weight: 600;
-              font-size: clamp(1rem, 0.963rem + 0.19vw, 1.125rem);
-            }
-
-            dd {
-              text-align: start;
-              padding: 0.8rem;
-
-              span {
-                margin-right: 1rem;
-                font-size: 18px;
-                font-weight: 600;
-
-                &.goal {
-                  color: darkorange;
-                }
-
-                &.task {
-                  color: crimson;
-                }
-
-                &.results {
-                  color: 	#6BD19C;
-                }
-              }
-            }
-          }
-        }
-      }
+    source,
+    img {
+      border-radius: 15px;
+      height: 100%;
     }
   }
-}
 
-dt:has(+ dd) {
-  margin-top: 0.8rem;
+  h3 {
+    color: white;
+    font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem);
+  }
+
+  p {
+    color: white;
+  }
 }
 
 @media (width <=768px) {
+  /* main {
+    grid-template-columns: 1fr;
+  } */
+   .list {
+    grid-template-columns: 1fr;
+   }
+}
+
+.card-content {
+  padding: 16px;
+  overflow: visible;
+  /* 必ず visible（または指定しない）にしてください */
+}
+
+footer {
+padding: calc(1vw + 20px) 0; 
+}
+
+@media (width <=768px) {
+  main {
+    width: 90%;
+  }
+  .project-card__link-wrap {
+    flex-direction: column!important;
+  }
+  .project-card__spec-detail {
+        flex-direction: column;
+  }
+  .project-card {
+        align-items: center;
+  }
+}
+
+
+
+
+
+
+/* @media (width <=768px) {
   .et-main {
     .et-slide {
       height: 100%;
@@ -235,240 +176,38 @@ dt:has(+ dd) {
   img {
     width: 100%;
   }
+} */
+
+
+.css-shimmer-text {
+  /* 1. 背景にグラデーションを設定（左から：ベース色 → 光の色 → ベース色） */
+  background: linear-gradient(120deg,
+      #333333 30%,
+      #ffffff 50%,
+      #333333 70%);
+
+  /* 2. 背景のサイズを大きくして、光を動かせるようにする */
+  background-size: 200% 100%;
+
+  /* 3. 重要：グラデーションを「文字の形」にくり抜く */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* 4. 元の文字の色を透明にして、背景のグラデーションを見せる */
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  /* 5. アニメーションをループ再生（4秒かけて1周、無限に繰り返す） */
+  animation: shimmerAnimation 4s infinite linear;
 }
 
-.responsive-table {
-  width: 90%;
-  border-collapse: collapse;
-  margin: 2rem auto;
+/* 光が左から右へ駆け抜ける動きの定義 */
+@keyframes shimmerAnimation {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
 }
-
-.responsive-table th,
-.responsive-table td {
-  padding: 1rem;
-  border-bottom: 1px solid #333;
-  text-align: start;
-}
-
-.responsive-table th {
-  font-size: 18px;
-}
-
-.responsive-table td:first-child {
-  font-weight: 600;
-}
-
-figcaption {
-  font-size: clamp(0.75rem, 0.713rem + 0.19vw, 0.875rem);
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.material-symbols-outlined {
-  font-size: clamp(1.125rem, 1.088rem + 0.19vw, 1.25rem);
-}
-
-/*
-----------
-tabs
-----------
-*/
-
-.tabs-01,
-.tabs-02,
-.tabs-03,
-.tabs-04,
-.tabs-05,
-.tabs-06,
-.tabs-07 {
-  background-color: #FFF;
-  border: 1px solid #333;
-  border-radius: 15px 15px 0 0;
-}
-
-.tabs-01 .tabs__item,
-.tabs-02 .tabs__item,
-.tabs-03 .tabs__item,
-.tabs-04 .tabs__item,
-.tabs-05 .tabs__item,
-.tabs-06 .tabs__item,
-.tabs-07 .tabs__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 4rem;
-  font-size: clamp(11px, 3.5vw, 16px);
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.tabs-01 .tabs__list,
-.tabs-02 .tabs__list,
-.tabs-03 .tabs__list,
-.tabs-04 .tabs__list,
-.tabs-05 .tabs__list,
-.tabs-06 .tabs__list,
-.tabs-07 .tabs__list {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.tabs-01 .tabs__item,
-.tabs-02 .tabs__item,
-.tabs-03 .tabs__item,
-.tabs-04 .tabs__item,
-.tabs-05 .tabs__item,
-.tabs-06 .tabs__item,
-.tabs-07 .tabs__item {
-  position: relative;
-  overflow: hidden;
-  flex-grow: 1;
-  flex-basis: calc(100% / 4);
-  letter-spacing: .1em;
-}
-
-.tabs-01 .tabs__item:not(:last-child),
-.tabs-02 .tabs__item:not(:last-child),
-.tabs-03 .tabs__item:not(:last-child),
-.tabs-04 .tabs__item:not(:last-child),
-.tabs-05 .tabs__item:not(:last-child),
-.tabs-06 .tabs__item:not(:last-child),
-.tabs-07 .tabs__item:not(:last-child) {
-  border-right: 1px solid #333;
-}
-
-.tabs__list label:first-child {
-  border-radius: 15px 0 0 0;
-}
-
-.tabs__list label:last-child {
-  border-radius: 0 15px 0 0;
-}
-
-.tabs .tabs__item:hover,
-.tabs .tabs__item:has(input:focus) {
-  background-color: #ddd;
-}
-
-.tabs-01 .tabs__item input,
-.tabs-02 .tabs__item input,
-.tabs-03 .tabs__item input,
-.tabs-04 .tabs__item input,
-.tabs-05 .tabs__item input,
-.tabs-06 .tabs__item input,
-.tabs-07 .tabs__item input  {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-.tabs .tabs__item:has(input:checked),
-.tabs .tabs__item:has(input:focus:checked) {
-  background-color: #333;
-  color: #FFF;
-}
-
-.tabs .tabs__content .tabs-inner {
-  border-top: 1px solid #333;
-}
-
-.tabs-01 .tabs__content,
-.tabs-02 .tabs__content,
-.tabs-03 .tabs__content,
-.tabs-04 .tabs__content,
-.tabs-05 .tabs__content,
-.tabs-06 .tabs__content,
-.tabs-07 .tabs__content {
-  overflow: hidden;
-  position: absolute;
-  height: 0;
-}
-.tabs-01 .tabs__list:has(#tabs-all > input:checked)~#tabs-all__content,
-.tabs-01 .tabs__list:has(#tabs-direction > input:checked)~#tabs-direction__content,
-.tabs-01 .tabs__list:has(#tabs-design > input:checked)~#tabs-design__content,
-.tabs-01 .tabs__list:has(#tabs-coding > input:checked)~#tabs-coding__content
-{
-  overflow: visible;
-  position: static;
-  height: auto;
-}
-
-
-.tabs-02 .tabs__list:has(#tabs-all > input:checked)~#tabs-all__content-02,
-.tabs-02 .tabs__list:has(#tabs-direction > input:checked)~#tabs-direction__content-02,
-.tabs-02 .tabs__list:has(#tabs-design > input:checked)~#tabs-design__content-02,
-.tabs-02 .tabs__list:has(#tabs-coding > input:checked)~#tabs-coding__content-02
-{
-  overflow: visible;
-  position: static;
-  height: auto;
-}
-
-.tabs-03 .tabs__list:has(#tabs-all > input:checked)~#tabs-all__content-03,
-.tabs-03 .tabs__list:has(#tabs-direction > input:checked)~#tabs-direction__content-03,
-.tabs-03 .tabs__list:has(#tabs-design > input:checked)~#tabs-design__content-03,
-.tabs-03 .tabs__list:has(#tabs-coding > input:checked)~#tabs-coding__content-03
-{
-  overflow: visible;
-  position: static;
-  height: auto;
-}
-
-.tabs-04 .tabs__list:has(#tabs-all > input:checked)~#tabs-all__content-04,
-.tabs-04 .tabs__list:has(#tabs-direction > input:checked)~#tabs-direction__content-04,
-.tabs-04 .tabs__list:has(#tabs-design > input:checked)~#tabs-design__content-04,
-.tabs-04 .tabs__list:has(#tabs-coding > input:checked)~#tabs-coding__content-04
-{
-  overflow: visible;
-  position: static;
-  height: auto;
-}
-
-.tabs-05 .tabs__list:has(#tabs-all > input:checked)~#tabs-all__content-05,
-.tabs-05 .tabs__list:has(#tabs-direction > input:checked)~#tabs-direction__content-05,
-.tabs-05 .tabs__list:has(#tabs-design > input:checked)~#tabs-design__content-05,
-.tabs-05 .tabs__list:has(#tabs-coding > input:checked)~#tabs-coding__content-05
-{
-  overflow: visible;
-  position: static;
-  height: auto;
-}
-
-.tabs-06 .tabs__list:has(#tabs-all > input:checked)~#tabs-all__content-06,
-.tabs-06 .tabs__list:has(#tabs-direction > input:checked)~#tabs-direction__content-06,
-.tabs-06 .tabs__list:has(#tabs-design > input:checked)~#tabs-design__content-06,
-.tabs-06 .tabs__list:has(#tabs-coding > input:checked)~#tabs-coding__content-06
-{
-  overflow: visible;
-  position: static;
-  height: auto;
-}
-
-.tabs-07 .tabs__list:has(#tabs-all > input:checked)~#tabs-all__content-07,
-.tabs-07 .tabs__list:has(#tabs-direction > input:checked)~#tabs-direction__content-07,
-.tabs-07 .tabs__list:has(#tabs-design > input:checked)~#tabs-design__content-07,
-.tabs-07 .tabs__list:has(#tabs-coding > input:checked)~#tabs-coding__content-07
-{
-  overflow: visible;
-  position: static;
-  height: auto;
-}
-
-
-.material-symbols-outlined {
-  font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
-}
-
